@@ -55,25 +55,25 @@ const Styles = styled.div`
         width: 100%;
         height: 100%;
         backface-visibility: hidden;
-        background: black;
+        background: rgba(0,0,0,0.7);
         border-radius: 10px;
-        color: white;
-        box-shadow: 5px 5px 5px;
+        color: grey;
+        box-shadow: 10px 10px 10px rgba(0,0,0,0.8);
         padding: 1%; 
-        // border: 10px solid transparent;
-        // padding: 15px;
-        // border-image: url(https://www.pngkey.com/png/detail/60-604968_background-frame-png-clipart-borders-and-frames-clip.png) 30 round;
+        border: 10px solid transparent;
+        padding: 15px;
+        border-image: url(https://www.freepnglogos.com/uploads/border-png/double-line-border-png-10.png) 20% round;
     }
     .theback {
         position: absolute;
         width: 100%;
         height: 100%;
         backface-visibility: hidden;
-        background: #fafafa;
-        color: #333;
+        background: rgba(0,0,0,0.7);
+        color: grey;
         border-radius: 10px;
         transform: rotateY(180deg);
-        box-shadow: 5px 5px 5px;
+        box-shadow: 5px 5px 5px rgba(0,0,0,0.9);
         padding: 1%; 
     }
 `;
@@ -136,7 +136,7 @@ export const Home = () => {
                                         <h1>Flip This card to See a list of My skills!</h1>
                                     </div>
                                     <div className='theback'>
-                                        <h1>Full Stack Dev!</h1>
+                                        <h1>Please Visit the Skills Link Above!</h1>
                                     </div>
                                     {/* <h1>What I can offer</h1> */}
                                 </div>

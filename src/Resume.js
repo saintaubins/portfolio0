@@ -14,9 +14,10 @@ export const Resume = () => {
         <>
             <div  className="position-relative w-200" style={{
                     'borderRadius': '10px',
-                    'boxShadow': '10px 10px 10px',
-                    'background': '#eee',
+                    'boxShadow': '15px 15px 15px rgba(0,0,0,0.9)',
+                    'background': 'rgba(0,0,0,0.7)',
                     'padding': '5%',
+                    'color': 'lightgrey',
                     'margin': '5%',
                     'border': '60px solid transparent',
                     'border-image': 'url(https://www.freepnglogos.com/uploads/border-png/double-line-border-png-10.png) 20% round',
@@ -104,7 +105,7 @@ export const Resume = () => {
                         </ul>
                     <h4>Military Experience:</h4>
                     <h5>&emsp;U.S. Marine Corps.  Camp Pendleton, CA / Camp Fuji Japan  &emsp;&emsp;&emsp;&emsp;&emsp;&emsp; 8/96 - 8/00</h5>
-                    <h5>&emsp;&emsp;Hardware and Software Engineer</h5>
+                    <h5>&emsp;&emsp;Heavy Equipment Engineer</h5>
                         <ul>
                             <li>Diesel Engine Maintenance and Repairs, Electronic Troubleshooting, Digital Analyst, and Multimedia Technologist.</li>
                             <li>Supervised and evaluated up to 20 engineers</li>

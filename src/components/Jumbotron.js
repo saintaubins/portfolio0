@@ -1,21 +1,26 @@
 import React from 'react';
 import { Jumbotron as Jumbo, Container } from 'react-bootstrap';
 import styled from 'styled-components';
+import navBack from '../assets/navBack.jpg'
 
 const Styles = styled.div`
-    .nyPark1 {
-        background: url('https://images.unsplash.com/photo-1530274011008-8314c6ed6863?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80') no-repeat fixed bottom;
+    .nyBackG {
+        background: url(${navBack}) no-repeat fixed bottom;
         background-size: cover;
+        //background-position: 50% 50%;
+        //vertical-align: middle;
+        //margin: 0;
         background-repeat: no-repeat;
         color: #ccc;
-        height: 300px;
+        //height: 100%;
+        //width: 100%;
         position: relative;
-        z-index: -2;
+        z-index: -1;
         border-radius: 10px;
         box-shadow: 5px 5px 5px;
         font-family: Shadows Into Light
     }
-    .overlay, .overlay1, .overlay2 {
+    .overlay {
         background-color: #000;
         opacity: 0.1;
         position: absolute;
@@ -32,11 +37,11 @@ const Styles = styled.div`
 
 export const Jumbotron = () => (
     <Styles>
-        <Jumbo fluid className='nyPark1'>
-            <div className='overlay1'></div>
+        <Jumbo fluid className='nyBackG'>
+            <div className='overlay'></div>
             <Container>
                 <h1>Welcome</h1>
-                <p>Hello, my apologies, this sight is still a work in progress, not that it's broken, it's just not completed yet.</p>
+                <p>Hello, my apologies, this sight is still a work in progress.</p>
             </Container>
         </Jumbo>
     </Styles>

@@ -5,11 +5,12 @@ export const Projects = () => (
     
         <div className="position-absolute w-100" style={{
             'borderRadius': '10px',
-            'boxShadow': '5px 5px 5px',
+            'boxShadow': '15px 15px 15px rgba(0,0,0,0.9)',
             'textAlign': 'center',
-            'background': '#eee',
+            'background': 'rgba(0,0,0,0.7)',
+            'color': 'lightgrey',
             'padding': '5%',
-            'border': '60px solid transparent',
+            'border': '100px solid transparent',
             'border-image': 'url(https://www.freepnglogos.com/uploads/border-png/deco-border-transparent-31.png) 20% round',
             
             // 'font-family': 'Shadows Into Light'

@@ -34,6 +34,7 @@ export const About = () => {
         adaptiveHeight: true,
         infinite: true,
         //speed: 1000,
+        pauseOnHover: false,
         autoplaySpeed: 2000,
         autoplay: true,
         slidesToShow: 1,
@@ -41,14 +42,16 @@ export const About = () => {
         slidesToScroll: 1,
         className: "slides2"
     }
+    //get settings from => https://react-slick.neostack.com/
     return (
         <>
             <div style={{
                 'borderRadius': '10px',
-                'boxShadow': '5px 5px 5px',
+                'boxShadow': '10px 10px 10px darkgrey',
                 'padding': '5%',
                 'margin':'0', 
-                'background-color': 'rgba(102, 34, 0, 0.8)'
+                'background-color': 'rgba(0, 0, 0, 0.8)',
+                'color': 'darkgrey'
             }} className="position-absolute w-100">
                 <Slider {...settings}>
                     {photos.map((photo) => {
@@ -57,7 +60,7 @@ export const About = () => {
                                 <center>
                                     <img style={{
                                     'border-radius': '10px',
-                                    'boxShadow': '5px 5px 5px',
+                                    'boxShadow': '5px 5px 5px darkgrey',
                                     }}  width='90%' height='80%'src={photo.url} alt='pictures of Sem'/>
                                 </center>   
                             </div>
