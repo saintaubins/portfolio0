@@ -4,13 +4,16 @@ import React from 'react';
 export const Projects = () => (
     
         <div className="position-absolute w-100" style={{
-            'borderRadius': '5px',
+            'borderRadius': '10px',
             'boxShadow': '5px 5px 5px',
             'textAlign': 'center',
+            'background': '#eee',
             'padding': '5%',
+            'border': '60px solid transparent',
+            'border-image': 'url(https://www.freepnglogos.com/uploads/border-png/deco-border-transparent-31.png) 20% round',
             
             // 'font-family': 'Shadows Into Light'
-            }}>
+        }}>
             <h2>This is a list of my recent projects</h2>
             <br></br>
             <p>I have used the latest technoligies including HTML5, CSS3, Javascript, React, Bootstrap, and countable FE, BE frameworks.</p>

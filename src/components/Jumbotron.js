@@ -1,12 +1,12 @@
 import React from 'react';
 import { Jumbotron as Jumbo, Container } from 'react-bootstrap';
 import styled from 'styled-components';
-import nyPark1 from '../assets/nyPark1.jpg';
 
 const Styles = styled.div`
     .nyPark1 {
-        background: url(${nyPark1}) no-repeat fixed bottom;
+        background: url('https://images.unsplash.com/photo-1530274011008-8314c6ed6863?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80') no-repeat fixed bottom;
         background-size: cover;
+        background-repeat: no-repeat;
         color: #ccc;
         height: 300px;
         position: relative;
@@ -17,7 +17,7 @@ const Styles = styled.div`
     }
     .overlay, .overlay1, .overlay2 {
         background-color: #000;
-        opacity: 0.6;
+        opacity: 0.1;
         position: absolute;
         top: 0;
         left: 0;

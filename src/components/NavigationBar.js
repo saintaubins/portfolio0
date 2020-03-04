@@ -14,7 +14,7 @@ const Styles = styled.div`
          color: #bbb;
 
         &:hover {
-            color: rgb(64, 112, 64);
+            color: rgba(64, 112, 64, 0.6);
         }
     }
 `;
@@ -22,7 +22,7 @@ const Styles = styled.div`
 export const NavigationBar = () => (
     <Styles>
         <Navbar expand='lg'>
-            <Navbar.Brand href='/'>Sem Saint-Aubin</Navbar.Brand>
+            <Navbar.Brand style={{'color':'white'}} href='/'>Sem Saint-Aubin</Navbar.Brand>
             <Navbar.Toggle aria-controls='basic-navbar-nav' />
             <NavbarCollapse id='basic-navbar-nav'>
                 <Nav className='ml-auto'>

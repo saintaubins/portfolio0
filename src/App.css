@@ -6,7 +6,7 @@ body {
 }
 a.social {
   margin: 0 1rem;
-  transition: transform 250ms;
+  /* transition: transform 250ms; */
   display: inline-block;
 }
 a.social:hover {
@@ -15,7 +15,7 @@ a.social:hover {
 }
 a {
   margin: 0 1rem;
-  transition: transform 250ms;
+  /* transition: transform 250ms; */
   display: inline-block;
 }
 a:hover {

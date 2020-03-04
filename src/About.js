@@ -7,19 +7,23 @@ import './App.css';
 const photos = [
     {
         name: 'Photo 1',
-        url: 'https://images.unsplash.com/photo-1518933165971-611dbc9c412d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=60'
+        url: 'https://www.qweb.com.mx/wp-content/uploads/2018/06/1499794874html5-js-css3-logo-png.png'
     },
     {
         name: 'Photo 2',
-        url: 'https://images.unsplash.com/photo-1552120476-9ee56c8611f7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=60'
+        url: 'https://miro.medium.com/max/3176/1*h-xRzZOCHk8jTlEa8M42GA.png'
     },
     {
         name: 'Photo 3',
-        url: 'https://images.unsplash.com/photo-1555680510-34daedadbdb1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=60'
+        url: 'https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto/gigs/104647991/original/713f5097b5d34cd41d807bf8b16b08950a2df875/do-web-development-using-python-django.png'
     },
     {
         name: 'Photo 4',
-        url: 'https://images.unsplash.com/photo-1565106430482-8f6e74349ca1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=60'
+        url: 'https://i0.wp.com/everyday.codes/wp-content/uploads/2019/12/jest-enzyme-1.png?fit=1200%2C704&ssl=1'
+    },
+    {
+        name: 'Photo 5',
+        url: 'https://geeksperhour.com/wp-content/uploads/2019/02/mern-img.png'
     }
 ]
 
@@ -27,8 +31,11 @@ export const About = () => {
     const settings = {
         dots: true,
         fade: true,
+        adaptiveHeight: true,
         infinite: true,
-        speed: 500,
+        //speed: 1000,
+        autoplaySpeed: 2000,
+        autoplay: true,
         slidesToShow: 1,
         arrows: true,
         slidesToScroll: 1,
@@ -41,7 +48,7 @@ export const About = () => {
                 'boxShadow': '5px 5px 5px',
                 'padding': '5%',
                 'margin':'0', 
-                'background-color': 'rgb(64, 112, 64)'
+                'background-color': 'rgba(102, 34, 0, 0.8)'
             }} className="position-absolute w-100">
                 <Slider {...settings}>
                     {photos.map((photo) => {
