@@ -14,7 +14,7 @@ const Styles = styled.div`
         // z-index: -2;
         border-radius: 10px;
         box-shadow: 5px 5px 5px black;
-        font-family: Shadows Into Light;
+        //font-family: Shadows Into Light;
         text-align: center;
         //opacity: 0.9;
         margin: 0;
@@ -57,7 +57,7 @@ const Styles = styled.div`
         backface-visibility: hidden;
         background: rgba(0,0,0,0.7);
         border-radius: 10px;
-        color: grey;
+        color: white;
         box-shadow: 10px 10px 10px rgba(0,0,0,0.8);
         padding: 1%; 
         border: 10px solid transparent;
@@ -70,7 +70,7 @@ const Styles = styled.div`
         height: 100%;
         backface-visibility: hidden;
         background: rgba(0,0,0,0.7);
-        color: grey;
+        color: white;
         border-radius: 10px;
         transform: rotateY(180deg);
         box-shadow: 5px 5px 5px rgba(0,0,0,0.9);

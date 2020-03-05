@@ -12,20 +12,20 @@ import './App.css';
 export const Resume = () => {
     return (
         <React.Fragment>
-            <div sytle={{'padding':'5%'}} className="position-absolute w-200">
+            <div sytle={{'padding':'5%', 'margin':'0'}} className="position-absolute w-200">
             <div  style={{
                     'borderRadius': '10px',
                     'boxShadow': '15px 15px 15px rgba(0,0,0,0.9)',
                     'background': 'rgba(0,0,0,0.7)',
-                    // 'padding': '5%',
+                    //'padding': '5%',
                     'color': 'lightgrey',
                     'margin': '0',
                     'border': '60px solid transparent',
                     'border-image': 'url(https://www.freepnglogos.com/uploads/border-png/double-line-border-png-10.png) 20% round',
-                    //'z-index':'-1'
+                    //'z-index':'-1',
                     // 'font-family': 'Shadows Into Light'
                     //Social Follow Stuff
-            }}>
+            }} >
                     <center>
                         <h3>Sem Saint-Aubin</h3>
                         <p>saintaubins@gmail.com</p>
@@ -122,5 +122,5 @@ export const Resume = () => {
                     <br></br><br></br>
         </div>
         </React.Fragment>
-    );   
+    )   
 }
