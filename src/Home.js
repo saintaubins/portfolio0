@@ -83,9 +83,9 @@ export const Home = () => {
     return (
         <React.Fragment>
             <div className="position-absolute w-100"  style={{
-                'borderRadius': '5px',
-                'boxShadow': '5px 5px 5px',
-                'padding':'5%'
+                // 'borderRadius': '5px',
+                // 'boxShadow': '5px 5px 5px',
+                 'padding':'5%'
             }}>
                 <Styles>
                     <Jumbo fluid className='nyPark'>

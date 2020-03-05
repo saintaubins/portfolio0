@@ -2,7 +2,8 @@ import React from 'react';
 
 
 export const Projects = () => (
-    
+    <>
+    <div style={{'padding':'5%'}} className="position-absolute w-100">
         <div className="position-absolute w-100" style={{
             'borderRadius': '10px',
             'boxShadow': '15px 15px 15px rgba(0,0,0,0.9)',
@@ -30,4 +31,6 @@ export const Projects = () => (
                 <br></br>
             </ul> 
         </div> 
+        </div>
+    </>
 )

@@ -11,14 +11,15 @@ import './App.css';
 
 export const Resume = () => {
     return (
-        <>
-            <div  className="position-relative w-200" style={{
+        <React.Fragment>
+            <div sytle={{'padding':'5%'}} className="position-absolute w-200">
+            <div  style={{
                     'borderRadius': '10px',
                     'boxShadow': '15px 15px 15px rgba(0,0,0,0.9)',
                     'background': 'rgba(0,0,0,0.7)',
-                    'padding': '5%',
+                    // 'padding': '5%',
                     'color': 'lightgrey',
-                    'margin': '5%',
+                    'margin': '0',
                     'border': '60px solid transparent',
                     'border-image': 'url(https://www.freepnglogos.com/uploads/border-png/double-line-border-png-10.png) 20% round',
                     //'z-index':'-1'
@@ -38,7 +39,7 @@ export const Resume = () => {
                             className='facebook social'>
                             <FontAwesomeIcon icon={faFacebook} size='2x' />
                             </a>
-                            <a href='https://github.com/saintaubins'
+                            <a href='https://github.com/saintaubins/'
                             className='github social'>
                             <FontAwesomeIcon icon={faGithub} size='2x' />
                             </a>
@@ -119,6 +120,7 @@ export const Resume = () => {
 
             </div>
                     <br></br><br></br>
-        </>
+        </div>
+        </React.Fragment>
     );   
 }
