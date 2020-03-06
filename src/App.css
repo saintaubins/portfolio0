@@ -10,8 +10,8 @@ a.social {
   display: inline-block;
 }
 a.social:hover {
-  transform: translateY(-3px);
-  color: rgba(64, 112, 64, 0.5);
+  transform: translateY(-2px);
+  color: rgb(64, 112, 64);
 }
 a {
   margin: 0 1rem;
@@ -19,11 +19,11 @@ a {
   display: inline-block;
 }
 a:hover {
-  transform: translateY(-3px);
+  transform: translateY(-2px);
   color:  rgb(64, 112, 64);
 }
 a.github {
-  color: black;
+  color: #49a1eb;
 }
 a.facebook {
   color: #4968ad;

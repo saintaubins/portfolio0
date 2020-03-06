@@ -1,5 +1,5 @@
 import React from 'react';
-import { Jumbotron as Jumbo, Container } from 'react-bootstrap';
+import { Jumbotron as Jumbo } from 'react-bootstrap';
 import styled from 'styled-components';
 import back1 from '../assets/back1.jpg';
 
@@ -10,7 +10,7 @@ const Styles = styled.div`
         background-size: cover;
         //background-position: 50% 50%;
         //vertical-align: middle;
-        //margin: 0;
+        margin: 0;
         padding: 0;
         background-repeat: no-repeat;
         //color: #ccc;
@@ -19,12 +19,12 @@ const Styles = styled.div`
         position: relative;
         z-index: -2;
         //border-radius: 10px;
-        box-shadow: 10px 10px 10px;
+        box-shadow: 10px 10px 10px grey;
         //font-family: Shadows Into Light
     }
     .overlay {
         background-color: #000;
-        opacity: 0.3;
+        opacity: 0.8;
         position: absolute;
         top: 0;
         left: 0;
@@ -100,12 +100,8 @@ export const Jumbotron = () => (
         <Jumbo fluid className='nyBackG'>
             <div className='overlay'></div>
             <div className='rain'></div>
-            <Container>
-                <div>
-                    <br></br>
-                    <p>Just a Little Rain and Lightning</p>
+                <div style={{'background': 'rgba(0,0,0,0.8)', 'margin':'0'}}>
                 </div>
-            </Container>
         </Jumbo>
     </Styles>
 )

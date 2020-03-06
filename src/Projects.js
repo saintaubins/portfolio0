@@ -3,7 +3,14 @@ import React from 'react';
 
 export const Projects = () => (
     <>
-    <div style={{'padding':'5%'}} className="position-absolute w-100">
+    <div style={{
+        'padding':'5%',
+        'background':'rgba(0,0,0,0.8)', 
+        'margin':'0',
+        'boxShadow': '10px 10px 10px black',
+        'position': 'absolute',
+        'height': '1000px'
+        }} className="position-absolute w-100">
         <div  style={{
             'borderRadius': '10px',
             'boxShadow': '15px 15px 15px rgba(0,0,0,0.9)',
@@ -21,13 +28,25 @@ export const Projects = () => (
             <p>I have used the latest technoligies including HTML5, CSS3, Javascript, React, Bootstrap, and countable FE, BE frameworks.</p>
             <br></br>
             <ul>
-                <li><a href='https://flamboyant-allen-c08689.netlify.com/'style={{'textDecoration': 'none', 'color': 'white'}}>An intuitive card game, with JavaScript, CSS3, HTML5.</a></li> 
+                <li><a href='https://flamboyant-allen-c08689.netlify.com/'
+                target='_blank'
+                rel="noopener noreferrer" 
+                style={{'textDecoration': 'none', 'color': 'white'}}>An intuitive card game, with JavaScript, CSS3, HTML5.</a></li> 
                 <br></br>
-                <li><a href='https://saintaubins.github.io/MemoryGame/' style={{'textDecoration': 'none', 'color': 'white'}}>My version of Simon, A Memory Game, with HTML5, CSS3, Bootstrap, and JavaScript.</a></li>
+                <li><a href='https://saintaubins.github.io/MemoryGame/' 
+                target='_blank'
+                rel="noopener noreferrer" 
+                style={{'textDecoration': 'none', 'color': 'white'}}>My version of Simon, A Memory Game, with HTML5, CSS3, Bootstrap, and JavaScript.</a></li>
                 <br></br>
-                <li><a href='https://eager-mahavira-49cb5b.netlify.com/' style={{'textDecoration': 'none', 'color': 'white'}}>This is a Jobsearch progaram, I created with a React front end Github Jobs, as the API back end stack.</a></li> 
+                <li><a href='https://eager-mahavira-49cb5b.netlify.com/'
+                target='_blank' 
+                rel="noopener noreferrer" 
+                style={{'textDecoration': 'none', 'color': 'white'}}>This is a Jobsearch progaram, I created with a React front end Github Jobs, as the API back end stack.</a></li> 
                 <br></br>
-                <li><a href='https://seiproj4.herokuapp.com/' style={{'textDecoration': 'none', 'color': 'white'}}>This is a Doctor Office app, I did recently with React and Firebase, there is also Login authentication.</a></li>
+                <li><a href='https://seiproj4.herokuapp.com/' 
+                target='_blank'
+                rel="noopener noreferrer" 
+                style={{'textDecoration': 'none', 'color': 'white'}}>This is a Doctor Office app, I did recently with React and Firebase, there is also Login authentication.</a></li>
                 <br></br>
             </ul> 
         </div> 

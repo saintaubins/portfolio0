@@ -13,7 +13,14 @@ export const Resume = () => {
     return (
         <React.Fragment>
             <div>
-            <div className="position-absolute w-200" style={{'padding':'5%'}} >
+            <div className="position-absolute w-200" style={{
+                'padding':'5%',
+                'background':'rgba(0,0,0,0.8)', 
+                'margin':'0',
+                'boxShadow': '10px 10px 10px black',
+                'position': 'absolute',
+                'height': '4000px'
+                }}>
             <div  style={{
                     'borderRadius': '10px',
                     'boxShadow': '15px 15px 15px rgba(0,0,0,0.9)',
@@ -33,20 +40,24 @@ export const Resume = () => {
                         <p>Cell phone (516) 429-8578</p>
                         <div className='social-container'>
                             <a href='https://www.linkedin.com/in/sem-saint-aubin/'
-                            className='linkedin social'>
-                            <FontAwesomeIcon icon={faLinkedin} size='2x' />
+                            className='linkedin social' target='_blank'
+                            rel="noopener noreferrer" >
+                            <FontAwesomeIcon icon={faLinkedin} size='3x' />
                             </a>
                             <a href='https://www.linkedin.com/in/sem-saint-aubin/'
-                            className='facebook social'>
-                            <FontAwesomeIcon icon={faFacebook} size='2x' />
+                            className='facebook social' target='_blank'
+                            rel="noopener noreferrer" >
+                            <FontAwesomeIcon icon={faFacebook} size='3x' />
                             </a>
                             <a href='https://github.com/saintaubins/'
-                            className='github social'>
-                            <FontAwesomeIcon icon={faGithub} size='2x' />
+                            className='github social' target='_blank'
+                            rel="noopener noreferrer" >
+                            <FontAwesomeIcon icon={faGithub} size='3x' />
                             </a>
                             <a href='https://www.linkedin.com/in/sem-saint-aubin/'
-                            className='twitter social'>
-                            <FontAwesomeIcon icon={faTwitter} size='2x' />
+                            className='twitter social' target='_blank'
+                            rel="noopener noreferrer" >
+                            <FontAwesomeIcon icon={faTwitter} size='3x' />
                             </a>
                         </div>
                         <br></br><br></br>

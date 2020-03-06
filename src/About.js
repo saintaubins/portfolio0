@@ -46,9 +46,8 @@ export const About = () => {
         fade: true,
         adaptiveHeight: true,
         infinite: true,
-        //speed: 1000,
         pauseOnHover: false,
-        autoplaySpeed: 4500,
+        autoplaySpeed: 1900,
         autoplay: true,
         slidesToShow: 1,
         arrows: true,
@@ -58,10 +57,17 @@ export const About = () => {
     //get settings from => https://react-slick.neostack.com/
     return (
         <React.Fragment>
-            <div style={{'padding':'5%'}} className="position-absolute w-100">
+            <div style={{
+                'padding':'5%',
+                'background':'rgba(0,0,0,0.8)', 
+                'margin':'0',
+                'boxShadow': '10px 10px 10px black',
+                'position': 'absolute',
+                'height': '1300px'
+                }} className="position-absolute w-100">
                 <div style={{
                     'borderRadius': '10px',
-                    'boxShadow': '10px 10px 10px black',
+                    'boxShadow': '10px 10px 10px darkgrey',
                     'padding': '5%',
                     'margin':'0', 
                     'background-color': 'rgba(0, 0, 0, 0.8)',
@@ -75,7 +81,7 @@ export const About = () => {
                                         <img style={{
                                         'border-radius': '10px',
                                         'boxShadow': '10px 10px 10px darkgrey',
-                                        }}  width='80%' height='90%'src={photo.url} alt='pictures of Sem'/>
+                                        }}  width='425px' height='90%'src={photo.url} alt='pictures of Sem'/>
                                     </center>   
                                 </div>
                             )

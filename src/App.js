@@ -5,7 +5,6 @@ import { About } from './About';
 import { Resume } from './Resume';
 import { Contact } from './Contact';
 import { Projects } from './Projects';
-import { Layout } from './components/Layout';
 import { NavigationBar } from './components/NavigationBar';
 import { Jumbotron } from './components/Jumbotron';
 import { useTransition, animated } from 'react-spring';
@@ -25,7 +24,7 @@ const App = () => {
       <React.Fragment>
           <NavigationBar />
           <Jumbotron />
-          <Layout>
+          {/* <Layout> */}
             {transitions.map(({ item, props, key }) => (
               <animated.div key={key} style={props}>
                 <Switch>
@@ -37,7 +36,7 @@ const App = () => {
                 </Switch>
               </animated.div>
             ))}  
-          </Layout>
+          {/* </Layout> */}
       </React.Fragment>
     );
 }

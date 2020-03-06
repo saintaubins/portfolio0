@@ -2,7 +2,14 @@ import React from 'react';
 
 export const Contact = () => (
     <>
-    <div style={{'padding':'5%'}} className="position-absolute w-100">
+    <div style={{
+        'padding':'5%',
+        'background':'rgba(0,0,0,0.8)', 
+        'margin':'0',
+        'boxShadow': '10px 10px 10px black',
+        'position': 'absolute',
+        'height': '1000px'
+        }} className="position-absolute w-100">
         <div  style={{
             'borderRadius': '7px',
             'boxShadow': '15px 15px 15px rgba(0,0,0,0.9)',
