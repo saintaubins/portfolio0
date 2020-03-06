@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { Nav, Navbar } from 'react-bootstrap';
 import styled from 'styled-components';
 
-import NavbarCollapse from 'react-bootstrap/NavbarCollapse';
+// import NavbarCollapse from 'react-bootstrap/NavbarCollapse';
 
 const Styles = styled.div`
     .navbar {
@@ -24,7 +24,7 @@ export const NavigationBar = () => (
         <Navbar expand='lg'>
             <Navbar.Brand style={{'color':'white'}} href='/'>Sem Saint-Aubin</Navbar.Brand>
             <Navbar.Toggle aria-controls='basic-navbar-nav' />
-            <NavbarCollapse id='basic-navbar-nav'>
+            <Navbar.Collapse id='basic-navbar-nav'>
                 <Nav className='ml-auto'>
                     <Nav.Item>
                         <Nav.Link>
@@ -52,7 +52,7 @@ export const NavigationBar = () => (
                         </Nav.Link>
                     </Nav.Item>
                 </Nav>
-            </NavbarCollapse>
+            </Navbar.Collapse>
         </Navbar>
     </Styles>
 )

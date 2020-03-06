@@ -12,7 +12,7 @@ const Styles = styled.div`
         height: 500px;
         position: relative;
         // z-index: -2;
-        border-radius: 10px;
+        border-radius: 7px;
         box-shadow: 10px 10px 10px black;
         //font-family: Shadows Into Light;
         text-align: center;
@@ -85,7 +85,8 @@ export const Home = () => {
             <div className="position-absolute w-100"  style={{
                 // 'borderRadius': '5px',
                 // 'boxShadow': '5px 5px 5px',
-                 'padding':'5%'
+                 'padding':'5%',
+                 //'background': 'darkgrey'
             }}>
                 <Styles>
                     <Jumbo fluid className='nyPark'>

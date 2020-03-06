@@ -1,11 +1,12 @@
 import React from 'react';
 import { Jumbotron as Jumbo, Container } from 'react-bootstrap';
 import styled from 'styled-components';
-import navBack from '../assets/navBack.png'
+import back1 from '../assets/back1.jpg';
+
 
 const Styles = styled.div`
     .nyBackG {
-        background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQM7eYiDSqafWoY5_T02u_59vq-S4uOtrIwsVdcFFNmnjh2t35h) no-repeat fixed bottom;
+        background: url(${back1}) no-repeat fixed bottom;
         background-size: cover;
         //background-position: 50% 50%;
         //vertical-align: middle;
@@ -13,25 +14,25 @@ const Styles = styled.div`
         padding: 0;
         background-repeat: no-repeat;
         //color: #ccc;
-        height: 300px;
+        height: 250px;
         //width: 100%;
         position: relative;
-        z-index: -1;
-        border-radius: 10px;
-        box-shadow: 5px 5px 5px;
+        z-index: -2;
+        //border-radius: 10px;
+        box-shadow: 10px 10px 10px;
         //font-family: Shadows Into Light
     }
     .overlay {
         background-color: #000;
-        opacity: 0.7;
+        opacity: 0.3;
         position: absolute;
         top: 0;
         left: 0;
         bottom: 0;
         right: 0;
         z-index: -1;
-        border-radius: 10px;
-        box-shadow: 5px 5px 5px;
+        //border-radius: 10px;
+        box-shadow: 10px 10px 10px;
 
     }
     .rain {
@@ -100,9 +101,9 @@ export const Jumbotron = () => (
             <div className='overlay'></div>
             <div className='rain'></div>
             <Container>
-                <div style={{'z-index':'-1'}}>
-                    <h1>Welcome</h1>
-                    <p>Just a Little Rain and Ligtining, Above.</p>
+                <div>
+                    <br></br>
+                    <p>Just a Little Rain and Lightning</p>
                 </div>
             </Container>
         </Jumbo>

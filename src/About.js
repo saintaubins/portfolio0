@@ -19,12 +19,25 @@ const photos = [
     },
     {
         name: 'Photo 4',
-        url: 'https://i0.wp.com/everyday.codes/wp-content/uploads/2019/12/jest-enzyme-1.png?fit=1200%2C704&ssl=1'
+        url: 'https://scotch-res.cloudinary.com/image/upload/w_1050,q_auto:good,f_auto/media/1/6mMCTFkRS0SlRIHIuOfQ_testing-react-components-with-enzyme-jest.jpg'
     },
     {
         name: 'Photo 5',
-        url: 'https://geeksperhour.com/wp-content/uploads/2019/02/mern-img.png'
+        url: 'https://www.pikpng.com/pngl/m/396-3962104_mern-stack-crash-course-mongodb-clipart.png'
+    },
+    {
+        name: 'Photo 6',
+        url: 'https://miro.medium.com/max/5336/1*R8dpDe1F8LIgCrN1QTfVBw.png'
+    },
+    {
+        name: 'Photo 7',
+        url: 'https://miro.medium.com/max/480/1*qgcaFqBSgNhsQQNpepIagA.png'
+    },
+    {
+        name: 'Photo 8',
+        url: 'https://www.netlify.com/img/press/logos/full-logo-dark.png'
     }
+    
 ]
 
 export const About = () => {
@@ -53,7 +66,7 @@ export const About = () => {
                     'margin':'0', 
                     'background-color': 'rgba(0, 0, 0, 0.8)',
                     'color': 'darkgrey'
-                }} className="position-absolute w-100">
+                }} >
                     <Slider {...settings}>
                         {photos.map((photo) => {
                             return(
@@ -62,7 +75,7 @@ export const About = () => {
                                         <img style={{
                                         'border-radius': '10px',
                                         'boxShadow': '10px 10px 10px darkgrey',
-                                        }}  width='90%' height='80%'src={photo.url} alt='pictures of Sem'/>
+                                        }}  width='80%' height='90%'src={photo.url} alt='pictures of Sem'/>
                                     </center>   
                                 </div>
                             )
