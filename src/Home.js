@@ -13,7 +13,7 @@ const Styles = styled.div`
         position: relative;
         // z-index: -2;
         border-radius: 10px;
-        box-shadow: 5px 5px 5px black;
+        box-shadow: 10px 10px 10px black;
         //font-family: Shadows Into Light;
         text-align: center;
         //opacity: 0.9;
@@ -93,10 +93,10 @@ export const Home = () => {
                             <div className='maincontainer'>
                                 <div className='thecard'>
                                     <div className='thefront'>
-                                        <h1>What Can I offer?</h1>
+                                        <h1>What Can I offer ?</h1>
                                     </div>
                                     <div className='theback'>
-                                        <h1>Front End Service!</h1>
+                                        <h1>Front End Service !</h1>
                                         <img style={{
                                             'width': '100%',
                                             'borderRadius': '7px'
@@ -113,10 +113,10 @@ export const Home = () => {
                             <div className='maincontainer'>
                                 <div className='thecard'>
                                     <div className='thefront'>
-                                        <h1>What else Can I offer?</h1>
+                                        <h1>What else Can I offer ?</h1>
                                     </div>
                                     <div className='theback'>
-                                        <h1>Back End Service!</h1>
+                                        <h1>Back End Service !</h1>
                                         <img style={{
                                             'width': '100%',
                                             'borderRadius': '7px'
@@ -133,10 +133,10 @@ export const Home = () => {
                             <div className='maincontainer'>
                                 <div className='thecard'>
                                     <div className='thefront'>
-                                        <h1>Flip This card to See a list of My skills!</h1>
+                                        <h1>Flip This card to See a list of My Skills !</h1>
                                     </div>
                                     <div className='theback'>
-                                        <h1>Please Visit the Skills Link Above!</h1>
+                                        <h1>Please Visit the Skills Link Above !</h1>
                                     </div>
                                     {/* <h1>What I can offer</h1> */}
                                 </div>

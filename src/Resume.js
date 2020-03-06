@@ -12,7 +12,8 @@ import './App.css';
 export const Resume = () => {
     return (
         <React.Fragment>
-            <div sytle={{'padding':'5%', 'margin':'0'}} className="position-absolute w-200">
+            <div>
+            <div className="position-absolute w-200" style={{'padding':'5%'}} >
             <div  style={{
                     'borderRadius': '10px',
                     'boxShadow': '15px 15px 15px rgba(0,0,0,0.9)',
@@ -120,6 +121,7 @@ export const Resume = () => {
 
             </div>
                     <br></br><br></br>
+        </div>
         </div>
         </React.Fragment>
     )   

@@ -35,7 +35,7 @@ export const About = () => {
         infinite: true,
         //speed: 1000,
         pauseOnHover: false,
-        autoplaySpeed: 2000,
+        autoplaySpeed: 4500,
         autoplay: true,
         slidesToShow: 1,
         arrows: true,
@@ -48,7 +48,7 @@ export const About = () => {
             <div style={{'padding':'5%'}} className="position-absolute w-100">
                 <div style={{
                     'borderRadius': '10px',
-                    'boxShadow': '10px 10px 10px darkgrey',
+                    'boxShadow': '10px 10px 10px black',
                     'padding': '5%',
                     'margin':'0', 
                     'background-color': 'rgba(0, 0, 0, 0.8)',
@@ -61,7 +61,7 @@ export const About = () => {
                                     <center>
                                         <img style={{
                                         'border-radius': '10px',
-                                        'boxShadow': '5px 5px 5px darkgrey',
+                                        'boxShadow': '10px 10px 10px darkgrey',
                                         }}  width='90%' height='80%'src={photo.url} alt='pictures of Sem'/>
                                     </center>   
                                 </div>

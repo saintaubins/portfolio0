@@ -8,7 +8,7 @@ import NavbarCollapse from 'react-bootstrap/NavbarCollapse';
 const Styles = styled.div`
     .navbar {
         background-color: #222;
-        font-family: Shadows Into Light
+        // font-family: Shadows Into Light
     }
     a, .navbar-brand, .navbar-nav .nav-link {
          color: #bbb;

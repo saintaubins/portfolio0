@@ -19,7 +19,7 @@ const Styles = styled.div`
         z-index: -1;
         border-radius: 10px;
         box-shadow: 5px 5px 5px;
-        font-family: Shadows Into Light
+        //font-family: Shadows Into Light
     }
     .overlay {
         background-color: #000;
@@ -102,7 +102,7 @@ export const Jumbotron = () => (
             <Container>
                 <div style={{'z-index':'-1'}}>
                     <h1>Welcome</h1>
-                    <p>Just a Little rain and ligtining</p>
+                    <p>Just a Little Rain and Ligtining, Above.</p>
                 </div>
             </Container>
         </Jumbo>
