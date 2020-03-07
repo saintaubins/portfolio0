@@ -9,13 +9,13 @@ export const Projects = () => (
         'margin':'0',
         'boxShadow': '10px 10px 10px black',
         'position': 'absolute',
-        'height': '1000px'
+        'height': '1900px'
         }} className="position-absolute w-100">
         <div  style={{
             'borderRadius': '10px',
             'boxShadow': '15px 15px 15px rgba(0,0,0,0.9)',
             'textAlign': 'center',
-            'background': 'rgba(0,0,0,0.7)',
+            'background': 'rgba(0,0,0,0.6)',
             'color': 'white',
             //'padding': '5%',
             'border': '100px solid transparent',

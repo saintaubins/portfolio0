@@ -12,7 +12,7 @@ export const Contact = () => (
         }} className="position-absolute w-100">
         <div  style={{
             'borderRadius': '7px',
-            'boxShadow': '15px 15px 15px rgba(0,0,0,0.9)',
+            'boxShadow': '15px 15px 15px rgba(0,0,0,0.6)',
             'background': 'rgba(0,0,0,0.7)',
             'padding': '5%',
             'margin': '3%',

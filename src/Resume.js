@@ -19,12 +19,12 @@ export const Resume = () => {
                 'margin':'0',
                 'boxShadow': '10px 10px 10px black',
                 'position': 'absolute',
-                'height': '4000px'
+                'height': '5300px'
                 }}>
             <div  style={{
                     'borderRadius': '10px',
                     'boxShadow': '15px 15px 15px rgba(0,0,0,0.9)',
-                    'background': 'rgba(0,0,0,0.7)',
+                    'background': 'rgba(0,0,0,0.5)',
                     //'padding': '5%',
                     'color': 'lightgrey',
                     'margin': '0',

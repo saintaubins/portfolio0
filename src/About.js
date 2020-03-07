@@ -70,7 +70,7 @@ export const About = () => {
                     'boxShadow': '10px 10px 10px darkgrey',
                     'padding': '5%',
                     'margin':'0', 
-                    'background-color': 'rgba(0, 0, 0, 0.8)',
+                    'background-color': 'rgba(0, 0, 0, 0.6)',
                     'color': 'darkgrey'
                 }} >
                     <Slider {...settings}>
@@ -81,7 +81,7 @@ export const About = () => {
                                         <img style={{
                                         'border-radius': '10px',
                                         'boxShadow': '10px 10px 10px darkgrey',
-                                        }}  width='425px' height='90%'src={photo.url} alt='pictures of Sem'/>
+                                        }}  width='325px' height='90%'src={photo.url} alt='pictures of Sem'/>
                                     </center>   
                                 </div>
                             )
