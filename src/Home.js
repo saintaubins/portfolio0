@@ -59,12 +59,10 @@ const Styles = styled.div`
         transition: all 2.3s ease;
         // background: yellow;
     }
-    .thecard:hover {
+    .thecard:link, .thecard:hover, .thecard:active  {
         transform: rotateY(180deg);
     }
-    .thecard:active {
-        transform: rotateY(180deg);
-    }
+     
     .thefront {
         position: absolute;
         width: 100%;
