@@ -62,6 +62,9 @@ const Styles = styled.div`
     .thecard:hover {
         transform: rotateY(180deg);
     }
+    .thecard:active {
+        transform: rotateY(180deg);
+    }
     .thefront {
         position: absolute;
         width: 100%;
