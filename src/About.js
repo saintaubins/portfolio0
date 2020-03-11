@@ -54,6 +54,7 @@ export const About = () => {
         slidesToScroll: 1,
         className: "slides2"
     }
+    
     //get settings from => https://react-slick.neostack.com/
     return (
         <React.Fragment>
