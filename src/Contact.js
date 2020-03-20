@@ -38,40 +38,46 @@ export const Contact = () => (
             </center>
         </div> 
             <center>
-                <Spring config={{
-                     mass: 1,
-                     tension: 70,
+                 <Spring 
+                 config={
+                    {
+                     mass: 8,
+                     tension: 100,
                      friction: 50,
                      clamp: false,
-                     precision: 0.01,
-                     velocity: 250,
-                     //delay: 0,
-
-                }}
+                     precision: 0.001,
+                     velocity: 30,
+                     delay: 1100,
+                }
+                
+            } 
+                
                     from={{
                         width: '50%',
                         //padding: '15px',
                         background:
-                        'linear-gradient(to right, white, blue, grey, rgb(221, 101, 101))',
+                        'linear-gradient(to right, white, blue, grey, black)',
                         transform:
                         'translate3d(0px,0px,0px) scale(1) rotateZ(360deg)',
-                        boxShadow: '15px 15px 15px 10px #2D3747',
+                        boxShadow: '15px 15px 15px  rgba(0,0,0,0.9)',
                         // borderBottom: '0px solid white',
                         //shape: 'M20,380 L380,380 L380,380 L200,20 L20,380 Z',
                         //textShadow: '5px 5px 5px white'
                     }}
                     to={{
-                        width: 'auto',
+                        transitionDuration: '0.7s',
+                        width: '50%',
                         padding: '15px',
                         //friction: '50',
                         background:
-                        'linear-gradient(to left, white, blue, grey, rgb(221, 101, 101))',
+                        'linear-gradient(to right, white, blue, grey, black)',
                         transform:
                         'translate3d(0px,0px,0px) scale(1) rotateX(0deg)',
                         boxShadow: '15px 15px 15px rgba(0,0,0,0.9)',
                         // borderBottom: '10px solid #2D3747',
-                        textAlign: 'center',
+                        //textAlign: 'center',
                         borderRadius: '7px',
+                        
                         //shape: 'M20,20 L20,380 L380,380 L380,20 L20,20 Z',
                         //textShadow: '15px 15px 15px rgba(255,255,255,0.9)'
                     }}>
