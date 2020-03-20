@@ -16,9 +16,12 @@ import './App.css';
 const App = () => {
   const { location } = useContext(__RouterContext);
   const transitions = useTransition(location, location => location.pathname, {
-      from: { opacity: 0, transform: "translateX(100%)" },
-      enter: { opacity: 1, transform: "translateX(0%)" },
-      leave: { opacity: 0, transform: "translateX(-100%)" }
+      from: { opacity: 0, transform: "translate3d(100%,0,0)" },
+      enter: { opacity: 1, transform: "translate3d(0%,0,0)" },
+      leave: { opacity: 0, transform: "translate3d(-50%,0,0)" }
+      // from: { opacity: 0, transform: "scale(1.1)" },
+      // enter: { opacity: 1, transform: "scale(1)" },
+      // leave: { opacity: 0, transform: "scale(0.9)" }
   });
     return (
       <React.Fragment>

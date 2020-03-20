@@ -36,23 +36,40 @@ const photos = [
     {
         name: 'Photo 8',
         url: 'https://www.netlify.com/img/press/logos/full-logo-dark.png'
-    }
+    },
+    {
+        name: 'Photo 9',
+        url: 'https://i.imgur.com/QZownhg.png'
+    },
+    {
+        name: 'Photo 10',
+        url: 'http://icons.iconarchive.com/icons/alecive/flatwoken/512/Apps-Github-icon.png'
+    },
+    {
+        name: 'Photo 11',
+        url: 'http://rubix.sketchpixy.com/imgs/homepage/bootstrapreact.png'
+    },
     
 ]
 
 export const About = () => {
     const settings = {
-        dots: true,
+        dots: false,
         fade: true,
+        centerMode: true,
         adaptiveHeight: true,
         infinite: true,
+        useCSS: true,
+        //dotsClass: "slick-dots",
+        swipeToSlide: true,
+        swipe: true,
         pauseOnHover: false,
         autoplaySpeed: 1150,
         autoplay: true,
         slidesToShow: 1,
-        arrows: true,
+        arrows: false,
         slidesToScroll: 1,
-        className: "slides2"
+        //className: "slides2"
     }
     
     //get settings from => https://react-slick.neostack.com/
@@ -68,7 +85,7 @@ export const About = () => {
                 //'width': '50%'
                 }} className="position-absolute w-100">
                 <div style={{
-                    'borderRadius': '10px',
+                    'borderRadius': '7px',
                     'boxShadow': '10px 10px 10px darkgrey',
                     'padding': '5%',
                     'margin':'0', 
@@ -81,9 +98,9 @@ export const About = () => {
                                 <div>
                                     <center>
                                         <img style={{
-                                        'border-radius': '10px',
+                                        'border-radius': '7px',
                                         'boxShadow': '10px 10px 10px darkgrey',
-                                        }}  width='325px' height='275px'src={photo.url} alt='pictures of Sem'/>
+                                        }}  width='80%'src={photo.url} alt='pictures of Skills'/>
                                     </center>   
                                 </div>
                             )

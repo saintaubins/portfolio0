@@ -112,7 +112,7 @@ export const Home = () => {
                                         <h2>What Can I offer ?</h2>
                                     </div>
                                     <div className='theback'>
-                                        <h2>Front End Service !</h2>
+                                        <h2 className='lG'>Front End Service !</h2>
                                         <img style={{
                                             'width': '100%',
                                             'borderRadius': '7px'

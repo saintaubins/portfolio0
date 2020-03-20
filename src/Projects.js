@@ -26,8 +26,8 @@ const Styles = styled.div`
    
     .maincontainer {
         position: relative;
-        width: 25%;
-        height: 230px;
+        width: 250px;
+        height: 320px;
     }
     .thecard {
         position: absolute;
@@ -97,7 +97,7 @@ export const Projects = () => {
                                             <div className='thefront'>
                                                 <div>
                                                     <h3>G.A. Card Game.</h3>
-                                                    <img src={cardGame} style={{'width':'50%', 'height':'20%', 'borderRadius':'7px', 'boxShadow':'7px 7px 7px black'}}></img>
+                                                    <img src={cardGame} alt='img of game' style={{'width':'100%', 'borderRadius':'7px', 'boxShadow':'7px 7px 7px black'}}></img>
                                                 </div> 
                                             </div>
                                             <div className='theback'>
@@ -117,7 +117,7 @@ export const Projects = () => {
                                             <div className='thefront'>
                                                 <div>
                                                     <h3> Memory Game. </h3>
-                                                    <img src={memGame} style={{'width':'50%', 'height':'20%', 'borderRadius':'7px', 'boxShadow':'7px 7px 7px black'}}></img> 
+                                                    <img src={memGame} alt='img of game' style={{'width':'100%', 'borderRadius':'7px', 'boxShadow':'7px 7px 7px black'}}></img> 
                                                 </div> 
                                             </div>
                                             <div className='theback'>
@@ -137,7 +137,7 @@ export const Projects = () => {
                                             <div className='thefront'>
                                                 <div>
                                                     <h3>Job Search. </h3> 
-                                                    <img src={jobSearch} style={{'width':'50%', 'height':'20%', 'borderRadius':'7px', 'boxShadow':'7px 7px 7px black'}}></img>
+                                                    <img src={jobSearch} alt='img of search' style={{'width':'100%', 'borderRadius':'7px', 'boxShadow':'7px 7px 7px black'}}></img>
                                                 </div> 
                                             </div>
                                             <div className='theback'>
@@ -145,7 +145,7 @@ export const Projects = () => {
                                                 <a href='https://eager-mahavira-49cb5b.netlify.com/'
                                                         target='_blank' rel="noopener noreferrer" 
                                                         style={{'textDecoration': 'none', 'color': 'white'}}>
-                                                            A Job Search App with React, Bootstrap, Github API Backend.
+                                                            A Job Search App with Frontend React, styling with react Bootstrap, Github API Backend.
                                                     </a>
                                                 </div> 
                                             </div>
@@ -157,7 +157,7 @@ export const Projects = () => {
                                                 <div className='thefront'>
                                                     <div>
                                                         <h3>Doctor's Office.</h3>  
-                                                        <img src={docOffice} style={{'width':'50%', 'height':'20%', 'borderRadius':'7px', 'boxShadow':'7px 7px 7px black'}}></img>
+                                                        <img src={docOffice} alt='img of docOffice' style={{'width':'100%', 'borderRadius':'7px', 'boxShadow':'7px 7px 7px black'}}></img>
                                                     </div> 
                                                 </div>
                                                 <div className='theback'>
@@ -165,7 +165,7 @@ export const Projects = () => {
                                                     <a href='https://seiproj4.herokuapp.com/'
                                                             target='_blank' rel="noopener noreferrer" 
                                                             style={{'textDecoration': 'none', 'color': 'white'}}>
-                                                                A Doctor's Office App with Firebase, React, and Bootstrap.
+                                                                A Doctor's Office App with Backend Firebase, Frontend React, and styling with react Bootstrap.
                                                         </a>
                                                     </div> 
                                                 </div>

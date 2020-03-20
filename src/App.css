@@ -19,8 +19,8 @@ a {
   display: inline-block;
 }
 a:hover {
-  transform: translateY(-2px);
-  color:  rgb(64, 112, 64);
+  transform: translateY(-1px);
+  /* color:  white; */
 }
 a.github {
   color: #49a1eb;
@@ -34,5 +34,20 @@ a.twitter {
 h4, h5 {
   font-style: italic;
   /* color: rgb(151, 122, 41); */
+}
+.slick-dots {
+  color: grey;
+}
+.lG {
+ 
+    /* background:linear-gradient(to right, rgb(112,101,214), rgb(230,106,213)); */
+    background:linear-gradient(to right,white,rgb(135, 135, 187),grey,rgb(158, 167, 77));
+    background-clip: text;
+    -webkit-background-clip: text;
+    /* -webkit-text-fill-color: transparent; */
+    color: transparent;
+    display: inline;
+    /* padding: 5%; */
+    /* text-align: center; */
 }
 
