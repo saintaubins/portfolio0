@@ -9,10 +9,9 @@ import StyledFirebaseAuth from 'react-firebaseui/StyledFirebaseAuth';
 //Got help from here => https://www.youtube.com/watch?v=zq0TuNqV0Ew
 
 firebase.initializeApp({
-    apiKey: 'AIzaSyDoONIIx7e6-FtYEK2DfzAvEtDifAb6KFM',
-    authDomain: 'portfolio0-auth.firebaseapp.com'
-})
-
+                apiKey: 'AIzaSyDoONIIx7e6-FtYEK2DfzAvEtDifAb6KFM',
+                authDomain: 'portfolio0-auth.firebaseapp.com'
+            })
 export class Contact extends Component {
     
         state = {
@@ -35,6 +34,7 @@ export class Contact extends Component {
             
             firebase.auth().onAuthStateChanged(user => {
                 this.setState({isSignedIn: !!user})
+                console.log('user', user)
             })
 
         }
@@ -43,11 +43,22 @@ export class Contact extends Component {
         return (
             <React.Fragment>
             <div className='Contact'>
-                {this.state.isSignedIn ? (
-                    <div>Signed In!</div>
-                ) : (
-                    <div>Not Signed In!</div>
-                )}
+            {this.state.isSignedIn ? (
+          <span>
+            <div>Signed In!</div>
+            <button onClick={() => firebase.auth().signOut()}>Sign out!</button>
+            <h1>Welcome {firebase.auth().currentUser.displayName}</h1>
+            <img
+              alt="profile picture"
+              src={firebase.auth().currentUser.photoURL}
+            />
+          </span>
+        ) : (
+          <StyledFirebaseAuth
+            uiConfig={this.uiConfig}
+            firebaseAuth={firebase.auth()}
+          />
+        )}
             </div>
             
                 <div style={{
