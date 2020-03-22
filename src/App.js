@@ -9,11 +9,13 @@ import { NavigationBar } from './components/NavigationBar';
 import { Jumbotron } from './components/Jumbotron';
 import { useTransition, animated } from 'react-spring';
 import './App.css';
+import firebase from 'firebase';
+import StyledFirebaseAuth from 'react-firebaseui/StyledFirebaseAuth';
 
 
 
 
-const App = () => {
+export const App = () => {
   const { location } = useContext(__RouterContext);
   const transitions = useTransition(location, location => location.pathname, {
       from: { opacity: 0, transform: "translate3d(100%,0,0)" },

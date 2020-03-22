@@ -44,17 +44,17 @@ export const Resume = () => {
                             rel="noopener noreferrer" >
                             <FontAwesomeIcon icon={faLinkedin} size='3x' />
                             </a>
-                            <a href='https://www.linkedin.com/in/sem-saint-aubin/'
+                            {/* <a href='https://www.facebook.com/sem.st.aubin'
                             className='facebook social' target='_blank'
                             rel="noopener noreferrer" >
                             <FontAwesomeIcon icon={faFacebook} size='3x' />
-                            </a>
+                            </a> */}
                             <a href='https://github.com/saintaubins/'
                             className='github social' target='_blank'
                             rel="noopener noreferrer" >
                             <FontAwesomeIcon icon={faGithub} size='3x' />
                             </a>
-                            <a href='https://www.linkedin.com/in/sem-saint-aubin/'
+                            <a href='https://twitter.com/semsaintaubin'
                             className='twitter social' target='_blank'
                             rel="noopener noreferrer" >
                             <FontAwesomeIcon icon={faTwitter} size='3x' />
