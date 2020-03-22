@@ -6,35 +6,35 @@ import { Spring, config, animated } from 'react-spring/renderprops';
 //console.log(easings)
 
 export const Contact = () => (
-    <>
-    <div style={{
-        'padding':'5%',
-        'background':'rgba(0,0,0,0.8)', 
-        'margin':'0',
-        'boxShadow': '10px 10px 10px black',
-        'position': 'absolute',
-        'height': '1000px'
-        }} className="position-absolute w-100">
+    <React.Fragment>
         <div style={{
-            'borderRadius': '7px',
-            'boxShadow': '15px 15px 15px rgba(0,0,0,0.6)',
-            'background': 'rgba(0,0,0,0.7)',
-            'padding': '1%',
-            'margin': '10%',
-            'color': 'lightgrey',
-            'border': '50px solid transparent',
-            'border-image': 'url(https://webstockreview.net/images/picture-border-png-3.png) 20% round',
-            //'font-family': 'Shadows Into Light'
-            }}> 
-            <center>
-                <div><h2 className='lG'>Contact Me</h2></div><br></br>
-                <div><a href="mailto:saintaubins@gmail.com? subject='Lets Connect' " target='_blank' className='lG'>Email: saintaubins@gmail.com</a></div>
-                <br></br>
-                <div><a href='https://www.linkedin.com/in/sem-saint-aubin/' target='_blank' className='lG'>LinkedIn: https://www.linkedin.com/in/sem-saint-aubin</a></div>
-                <br></br>
-                <div><a href='https://github.com/saintaubins' target='_blank' className='lG'>Github: https://github.com/saintaubins</a></div>
-                <br></br>
-                <div><p className='lG'>Cell Phone: 516-429-8578</p></div>
+            'padding':'5%',
+            'background':'rgba(0,0,0,0.8)', 
+            'margin':'0',
+            'boxShadow': '10px 10px 10px black',
+            'position': 'absolute',
+            'height': '1000px'
+            }} className="position-absolute w-100">
+            <div style={{
+                'borderRadius': '7px',
+                'boxShadow': '15px 15px 15px rgba(0,0,0,0.6)',
+                'background': 'rgba(0,0,0,0.7)',
+                'padding': '1%',
+                'margin': '10%',
+                'color': 'lightgrey',
+                'border': '50px solid transparent',
+                'border-image': 'url(https://webstockreview.net/images/picture-border-png-3.png) 20% round',
+                //'font-family': 'Shadows Into Light'
+                }}> 
+                <center>
+                    <div><h2 className='lG'>Contact Me</h2></div><br></br>
+                    <div><a href="mailto:saintaubins@gmail.com? subject='Lets Connect' " target='_blank' className='lG'>Email: saintaubins@gmail.com</a></div>
+                    <br></br>
+                    <div><a href='https://www.linkedin.com/in/sem-saint-aubin/' target='_blank' className='lG'>LinkedIn: https://www.linkedin.com/in/sem-saint-aubin</a></div>
+                    <br></br>
+                    <div><a href='https://github.com/saintaubins' target='_blank' className='lG'>Github: https://github.com/saintaubins</a></div>
+                    <br></br>
+                    <div><p className='lG'>Cell Phone: 516-429-8578</p></div>
             </center>
         </div> 
             <center>
@@ -48,10 +48,8 @@ export const Contact = () => (
                      precision: 0.001,
                      velocity: 30,
                      delay: 1100,
-                }
-                
+                }  
             } 
-                
                     from={{
                         width: '50%',
                         //padding: '15px',
@@ -85,6 +83,5 @@ export const Contact = () => (
                 </Spring>
             </center>
         </div>
-        
-    </>
+    </React.Fragment>
 )
