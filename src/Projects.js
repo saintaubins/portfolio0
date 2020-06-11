@@ -10,32 +10,12 @@ import docOffice from '../src/assets/docOffice.png';
 const Styles = styled.div`
     .projects {
         background: url('https://images.unsplash.com/photo-1582634046772-e68ad47e5e33?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1241&q=80') no-repeat fixed bottom;
-        //background-size: cover;
-        //color: white;
-        //text-shadow: 4px 4px black;
-        //height: 100%;
         position: relative;
-        // z-index: -2;
         border-radius: 7px;
         box-shadow: 10px 10px 10px black;
-        //font-family: Shadows Into Light;
-        //text-align: center;
         opacity: 0.8;
         margin: 0;
     }
-    // .overlay {
-    //     background-color: #000;
-    //     opacity: 0.2;
-    //     position: absolute;
-    //     top: 0;
-    //     left: 0;
-    //     bottom: 0;
-    //     right: 0;
-    //     z-index: 1;
-    //     border-radius: 10px;
-    //     // box-shadow: 5px 5px 5px;
-
-    // }
     .maincontainer {
         position: relative;
         width: 250px;
@@ -87,16 +67,8 @@ export const Projects = () => {
                 'padding':'3%',
                 'background':'rgba(0,0,0,0.8)', 
                 'margin':'0',
-                //'boxShadow': '10px 10px 10px black',
-                //'position': 'absolute',
-                //'height': '1900px'
-                }}>
+            }}>
                     <div  style={{
-                        //'borderRadius': '10px',
-                        //'boxShadow': '15px 15px 15px rgba(0,0,0,0.9)',
-                        //'textAlign': 'center',
-                        //'background': 'rgba(0,0,0,0.6)',
-                        //'color': 'white',
                         'border': '100px solid transparent',
                         'border-image': 'url(https://www.freepnglogos.com/uploads/border-png/deco-border-transparent-31.png) 20% round', 
                     }}>

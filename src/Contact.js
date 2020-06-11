@@ -1,11 +1,8 @@
 import React, { Component } from 'react';
-import { Spring, config, animated } from 'react-spring/renderprops';
-//import {GradientPinkRed as Gradient } from 'gradient';
-//import * as easings from 'd3-ease';
+import { Spring } from 'react-spring/renderprops';
 import firebase from 'firebase';
 import StyledFirebaseAuth from 'react-firebaseui/StyledFirebaseAuth';
 
-//console.log(easings)
 //Got help from here => https://www.youtube.com/watch?v=zq0TuNqV0Ew
 
 firebase.initializeApp({
@@ -44,15 +41,17 @@ export class Contact extends Component {
             <React.Fragment>
             <div className='Contact'>
             {this.state.isSignedIn ? (
-          <span>
-            <div>Signed In!</div>
-            <button onClick={() => firebase.auth().signOut()}>Sign out!</button>
-            <h1>Welcome {firebase.auth().currentUser.displayName}</h1>
-            <img
-              alt="profile picture"
-              src={firebase.auth().currentUser.photoURL}
-            />
-          </span>
+                <center>
+                    <span>
+                        <div>Signed In!</div>
+                        <button onClick={() => firebase.auth().signOut()}>Sign out!</button>
+                        <h1>Welcome {firebase.auth().currentUser.displayName}</h1>
+                        <img
+                        alt="profile"
+                        src={firebase.auth().currentUser.photoURL}
+                        />
+                    </span>
+                </center>
         ) : (
           <StyledFirebaseAuth
             uiConfig={this.uiConfig}
@@ -78,60 +77,47 @@ export class Contact extends Component {
                         'color': 'lightgrey',
                         'border': '50px solid transparent',
                         'border-image': 'url(https://webstockreview.net/images/picture-border-png-3.png) 20% round',
-                        //'font-family': 'Shadows Into Light'
-                        }}> 
+                    }}> 
                         <center>
                             <div><h2 className='lG'>Contact Me</h2></div><br></br>
-                            <div><a href="mailto:saintaubins@gmail.com? subject='Lets Connect' " target='_blank' className='lG'>Email: saintaubins@gmail.com</a></div>
+                            <div><a href="mailto:saintaubins@gmail.com? subject='Lets Connect' " target='_blank' rel="noopener noreferrer" className='lG'>Email: saintaubins@gmail.com</a></div>
                             <br></br>
-                            <div><a href='https://www.linkedin.com/in/sem-saint-aubin/' target='_blank' className='lG'>LinkedIn: https://www.linkedin.com/in/sem-saint-aubin</a></div>
+                            <div><a href='https://www.linkedin.com/in/sem-saint-aubin/' target='_blank' rel="noopener noreferrer" className='lG'>LinkedIn: https://www.linkedin.com/in/sem-saint-aubin</a></div>
                             <br></br>
-                            <div><a href='https://github.com/saintaubins' target='_blank' className='lG'>Github: https://github.com/saintaubins</a></div>
+                            <div><a href='https://github.com/saintaubins' target='_blank' rel="noopener noreferrer" className='lG'>Github: https://github.com/saintaubins</a></div>
                             <br></br>
                             <div><p className='lG'>Cell Phone: 516-429-8578</p></div>
                     </center>
                 </div> 
                     <center>
                         <Spring 
-                        config={
-                            {
-                            mass: 8,
-                            tension: 100,
-                            friction: 50,
-                            clamp: false,
-                            precision: 0.001,
-                            velocity: 30,
-                            delay: 1100,
-                        }  
-                    } 
+                            config={{
+                                mass: 8,
+                                tension: 100,
+                                friction: 50,
+                                clamp: false,
+                                precision: 0.001,
+                                velocity: 30,
+                                delay: 1100,
+                            }} 
                             from={{
                                 width: '50%',
-                                //padding: '15px',
                                 background:
                                 'linear-gradient(to right, white, blue, grey, black)',
                                 transform:
                                 'translate3d(0px,0px,0px) scale(1) rotateZ(360deg)',
                                 boxShadow: '15px 15px 15px  rgba(0,0,0,0.9)',
-                                // borderBottom: '0px solid white',
-                                //shape: 'M20,380 L380,380 L380,380 L200,20 L20,380 Z',
-                                //textShadow: '5px 5px 5px white'
                             }}
                             to={{
                                 transitionDuration: '0.7s',
                                 width: '50%',
                                 padding: '15px',
-                                //friction: '50',
                                 background:
                                 'linear-gradient(to right, white, blue, grey, black)',
                                 transform:
                                 'translate3d(0px,0px,0px) scale(1) rotateX(0deg)',
                                 boxShadow: '15px 15px 15px rgba(0,0,0,0.9)',
-                                // borderBottom: '10px solid #2D3747',
-                                //textAlign: 'center',
                                 borderRadius: '7px',
-                                
-                                //shape: 'M20,20 L20,380 L380,380 L380,20 L20,20 Z',
-                                //textShadow: '15px 15px 15px rgba(255,255,255,0.9)'
                             }}>
                             {props => <div style={props}><h2 className='lG'>Sem Saint-Aubin</h2></div>}
                         </Spring>
