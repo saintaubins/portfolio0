@@ -51,20 +51,24 @@ export const Resume = () => {
                         </div>
                         <br></br><br></br>
                     </center>
-                        <p>&emsp;I am a Software Engineer, I am resolving complex problems with simple solutions. I am excited to deal with issues related with, Frontend, or Backend development, and maintenance. My passion towards engineering highly motivates me to being a more successful person. I can offer professionalism, enthusiasm, courtesy, fairness, and excellent time management.</p>
+                        <p>&emsp;I am a Software Engineer with over 10 years of engineering experience, who resolves complex problems with simple solutions. I am eager to deal with issues related with Frontend, or Backend development, and maintenance.</p>
                     <br></br>
                    
                     <h4>Skills:</h4>
                     <h5>Frontend:</h5>
-                    <p>&emsp;HTML5, CSS3, JavaScript, React, Bootstrap, Sass.</p>
+                    <p>&emsp;HTML5, CSS3, JavaScript, React, Bootstrap, Sass, NextJs, Gatsby, User Interface (UI).</p>
                     <h5>Backend:</h5>
-                    <p>&emsp;Python Django, Node, Express, Firebase, Restful API's.</p>
+                    <p>&emsp;Python Django, NodeJs, Express, Firebase, Restful API's.</p>
                     <h5>Databases:</h5>
                     <p>&emsp;MongoDb, Postgress SQL, MySQL, JSON, XML.</p>
                     <h5>Testing:</h5>
                     <p>&emsp;Jest, Enzyme, Mocha, Chai, Supertest.</p>
                     <h5>Deployment:</h5>
                     <p>&emsp;Github Pages, Netlify, Heroku.</p>
+                    <h5>I.T.:</h5>
+                    <p>&emsp;TCP/IP, DHCP, ARP, PING, FTP, CONFIG, TRACERT, TELNET, DOS, CLI.</p>
+                    <h5>Interpersonal:</h5>
+                    <p>&emsp;Marine Sergeant, Attention to detail, Courtesy, Fairness, Time management, Enthusiasm, Endurance.</p>
                     <br></br>
                     <h4>Experience:</h4>
                     <h5>&emsp;Howl For Change, Brooklyn, NY	&emsp;&emsp;&emsp;&emsp;&emsp; 3/20 - Present</h5>
