@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import { Route, Switch, __RouterContext } from 'react-router-dom';
 import { Home } from './Home';
-import { About } from './About';
+import { Skills } from './Skills';
 import { Resume } from './Resume';
 import { Contact } from './Contact';
 import { Projects } from './Projects';
@@ -28,7 +28,7 @@ export const App = () => {
               <animated.div key={key} style={props}>
                 <Switch>
                   <Route exact path="/" component={Home} />
-                  <Route exact path="/about" component={About} />
+                  <Route exact path="/skills" component={Skills} />
                   <Route exact path="/resume" component={Resume} />
                   <Route exact path='/projects'component={Projects} />
                   <Route exact path="/contact" component={Contact} />

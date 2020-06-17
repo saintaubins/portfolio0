@@ -10,7 +10,7 @@ const Styles = styled.div`
         background-color: #222;
         // font-family: Shadows Into Light
     }
-    a, .navbar-brand, .navbar-nav .nav-link {
+    a, .navbar-brand, .navbar-nav, .nav-link {
          color: #bbb;
 
         &:hover {
@@ -24,8 +24,8 @@ export const NavigationBar = () => (
     <Styles>
         <Navbar expand='lg'>
             <Navbar.Brand style={{'color':'white'}} href='/'>Sem Saint-Aubin</Navbar.Brand>
-            <Navbar.Toggle  aria-controls='basic-navbar-nav' />
-            <Navbar.Collapse style={{'color':'white'}} id='basic-navbar-nav'>
+            <Navbar.Toggle style={{'background-color':'white'}}aria-controls='basic-navbar-nav' />
+            <Navbar.Collapse id='basic-navbar-nav'>
                 <Nav className='ml-auto'>
                     <Nav.Item>
                         <Nav.Link>
@@ -34,7 +34,7 @@ export const NavigationBar = () => (
                     </Nav.Item>
                     <Nav.Item>
                         <Nav.Link>
-                            <Link to='/about'>Skills</Link>
+                            <Link to='/skills'>Skills</Link>
                         </Nav.Link>
                     </Nav.Item>
                     <Nav.Item>

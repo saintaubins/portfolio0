@@ -52,7 +52,7 @@ const photos = [
     
 ]
 
-export const About = () => {
+export const Skills = () => {
     const settings = {
         dots: false,
         fade: true,
