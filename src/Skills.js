@@ -89,16 +89,16 @@ export const Skills = () => {
                     'boxShadow': '10px 10px 10px darkgrey',
                     'padding': '5%',
                     'margin':'0', 
-                    'background-color': 'rgba(0, 0, 0, 0.6)',
+                    'backgroundColor': 'rgba(0, 0, 0, 0.6)',
                     'color': 'darkgrey'
                 }} >
                     <Slider {...settings}>
                         {photos.map((photo) => {
                             return(
-                                <div>
+                                <div key={photo.name}>
                                     <center>
                                         <img style={{
-                                        'border-radius': '7px',
+                                        'borderRadius': '7px',
                                         'boxShadow': '10px 10px 10px darkgrey',
                                         }}  width='80%'src={photo.url} alt='pictures of Skills'/>
                                     </center>   

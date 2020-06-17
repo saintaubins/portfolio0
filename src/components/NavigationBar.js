@@ -24,33 +24,23 @@ export const NavigationBar = () => (
     <Styles>
         <Navbar expand='lg'>
             <Navbar.Brand style={{'color':'white'}} href='/'>Sem Saint-Aubin</Navbar.Brand>
-            <Navbar.Toggle style={{'background-color':'white'}}aria-controls='basic-navbar-nav' />
+            <Navbar.Toggle style={{'backgroundColor':'white'}}aria-controls='basic-navbar-nav' />
             <Navbar.Collapse id='basic-navbar-nav'>
                 <Nav className='ml-auto'>
                     <Nav.Item>
-                        <Nav.Link>
                             <Link to='/'>Home</Link>
-                        </Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
-                        <Nav.Link>
                             <Link to='/skills'>Skills</Link>
-                        </Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
-                        <Nav.Link>
                             <Link to='/resume'>Resume</Link>
-                        </Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
-                        <Nav.Link>
                             <Link to='/projects'>Projects</Link>
-                        </Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
-                        <Nav.Link>
                             <Link to='/contact'>Contact</Link>
-                        </Nav.Link>
                     </Nav.Item>
                 </Nav>
             </Navbar.Collapse>

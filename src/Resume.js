@@ -23,7 +23,7 @@ export const Resume = () => {
                     'color': 'lightgrey',
                     'margin': '0',
                     'border': '60px solid transparent',
-                    'border-image': 'url(https://www.freepnglogos.com/uploads/border-png/double-line-border-png-10.png) 20% round',
+                    'borderImage': 'url(https://www.freepnglogos.com/uploads/border-png/double-line-border-png-10.png) 20% round',
         
                     //Social Follow Stuff
             }} >
@@ -51,7 +51,7 @@ export const Resume = () => {
                         </div>
                         <br></br><br></br>
                     </center>
-                        <p>&emsp;I am a Software Engineer with over 10 years of engineering experience, who resolves complex problems with simple solutions. I am acquisitive to deal with issues related with Frontend, or Backend development, and maintenance.</p>
+                        <p>&emsp;I am a Software Engineer with over 10 years of engineering experience, who resolves complex problems with simple solutions. I am acquisitive to working with issues related with Frontend, or Backend development, and maintenance.</p>
                     <br></br>
                    
                     <h4>Skills:</h4>
@@ -68,7 +68,7 @@ export const Resume = () => {
                     <h5>I.T.:</h5>
                     <p>&emsp;TCP/IP, DHCP, ARP, PING, FTP, IPCONFIG, TRACERT, TELNET, DOS, CLI.</p>
                     <h5>Interpersonal:</h5>
-                    <p>&emsp;Marine Sergeant, Attention to detail, Courtesy, Fairness, Time management, Enthusiasm, Endurance.</p>
+                    <p>&emsp;Marine Corps Veteran, Attention to detail, Courtesy, Fairness, Time management, Enthusiasm, Endurance.</p>
                     <br></br>
                     <h4>Work Experience:</h4>
                     <h5>&emsp;Howl For Change, Brooklyn, NY	&emsp;&emsp;&emsp;&emsp;&emsp; 3/20 - Present</h5>

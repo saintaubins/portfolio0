@@ -19,31 +19,13 @@ import './App.css';
 const Styles = styled.div`
     .nyPark {
         background: url('https://images.unsplash.com/photo-1582634046772-e68ad47e5e33?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1241&q=80') no-repeat fixed bottom;
-        //background-size: cover;
         color: #ccc;
-        //height: 100%;
         position: relative;
-        // z-index: -2;
         border-radius: 7px;
         box-shadow: 10px 10px 10px black;
-        //font-family: Shadows Into Light;
         text-align: center;
-        //opacity: 0.9;
         margin: 0;
     }
-    // .overlay {
-    //     background-color: #000;
-    //     opacity: 0.2;
-    //     position: absolute;
-    //     top: 0;
-    //     left: 0;
-    //     bottom: 0;
-    //     right: 0;
-    //     z-index: 1;
-    //     border-radius: 10px;
-    //     // box-shadow: 5px 5px 5px;
-
-    // }
     .maincontainer {
         position: relative;
         width: 250px;
@@ -57,12 +39,10 @@ const Styles = styled.div`
         height: 100%;
         transform-style: preserve-3d;
         transition: all 2.3s ease;
-        // background: yellow;
     }
     .thecard:link, .thecard:hover, .thecard:active  {
         transform: rotateY(180deg);
     }
-     
     .thefront {
         position: absolute;
         width: 100%;
@@ -96,8 +76,6 @@ export const Home = () => {
     return (
         <React.Fragment>
             <div className="position-absolute w-100"  style={{
-                // 'borderRadius': '5px',
-                // 'boxShadow': '5px 5px 5px',
                  'padding':'5%',
                  'background': 'rgba(0,0,0,0.8)',
                  'margin': '0'

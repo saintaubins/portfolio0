@@ -70,7 +70,7 @@ export const Projects = () => {
             }}>
                     <div  style={{
                         'border': '100px solid transparent',
-                        'border-image': 'url(https://www.freepnglogos.com/uploads/border-png/deco-border-transparent-31.png) 20% round', 
+                        'borderImage': 'url(https://www.freepnglogos.com/uploads/border-png/deco-border-transparent-31.png) 20% round', 
                     }}>
                         <Styles>
                             <Jumbo fluid className='projects'>

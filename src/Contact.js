@@ -24,13 +24,13 @@ export class Contact extends Component {
                 firebase.auth.EmailAuthProvider.PROVIDER_ID
             ],
             callbacks: {
-                signInSuccess: () => false
+                signInSuccessWithAuthResult: () => false
             }
         }
         componentDidMount = () => {
             
             firebase.auth().onAuthStateChanged(user => {
-                this.setState({isSignedIn: !!user})
+                this.setState({isSignedIn: user})
                 console.log('user', user)
             })
 
@@ -76,7 +76,7 @@ export class Contact extends Component {
                         'margin': '10%',
                         'color': 'lightgrey',
                         'border': '50px solid transparent',
-                        'border-image': 'url(https://webstockreview.net/images/picture-border-png-3.png) 20% round',
+                        'borderImage': 'url(https://webstockreview.net/images/picture-border-png-3.png) 20% round',
                     }}> 
                         <center>
                             <div><h2 className='lG'>Contact Me</h2></div><br></br>
