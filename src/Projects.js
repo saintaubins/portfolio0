@@ -28,8 +28,7 @@ const Styles = styled.div`
         width: 100%;
         height: 100%;
         transform-style: preserve-3d;
-        transition: all 2s ease;
-         //background: yellow;
+        transition: all 2.3s ease;
     }
     .thecard:hover {
         transform: rotateX(180deg);
@@ -66,14 +65,15 @@ export const Projects = () => {
     return (
         <React.Fragment>
             <div className="position-absolute w-100" style={{
-                'padding':'3%',
+                'padding':'5%',
                 'background':'rgba(0,0,0,0.8)', 
-                'margin':'0',
+                'margin':'0'
             }}>
-                    <div  style={{
+                    {/* <div style={{
                         'border': '100px solid transparent',
-                        'borderImage': 'url(https://www.freepnglogos.com/uploads/border-png/deco-border-transparent-31.png) 20% round', 
-                    }}>
+                        'borderImage': 'url(https://www.freepnglogos.com/uploads/border-png/deco-border-transparent-31.png) 20% round',
+                        'margin':'0', 
+                    }}> */}
                         <Styles>
                             <Jumbo fluid className='projects'>
                             <div className='overlay'></div>
@@ -162,7 +162,7 @@ export const Projects = () => {
                                 </center>
                             </Jumbo>
                         </Styles>
-                    </div> 
+                    {/* </div>  */}
                 </div>
         </React.Fragment>
     );
