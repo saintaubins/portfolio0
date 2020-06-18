@@ -24,7 +24,7 @@ export const NavigationBar = () => (
     <Styles>
         <Navbar expand='lg'>
             <Navbar.Brand style={{'color':'white'}} href='/'>Sem Saint-Aubin</Navbar.Brand>
-            <Navbar.Toggle style={{'backgroundColor':'white'}}aria-controls='basic-navbar-nav' />
+            <Navbar.Toggle style={{'backgroundColor':'#bbb'}}aria-controls='basic-navbar-nav' />
             <Navbar.Collapse id='basic-navbar-nav'>
                 <Nav className='ml-auto'>
                     <Nav.Item>

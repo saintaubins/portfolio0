@@ -18,13 +18,13 @@ import './App.css';
 
 const Styles = styled.div`
     .nyPark {
-        background: url('https://images.unsplash.com/photo-1582634046772-e68ad47e5e33?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1241&q=80') no-repeat fixed bottom;
-        color: #ccc;
-        position: relative;
+        background-image: url('https://images.unsplash.com/photo-1582634046772-e68ad47e5e33?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1241&q=80');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
         border-radius: 7px;
         box-shadow: 10px 10px 10px black;
-        text-align: center;
-        margin: 0;
+        opacity: 0.8;
     }
     .maincontainer {
         position: relative;
@@ -120,7 +120,6 @@ export const Home = () => {
                                         <h2>Flip This card to See a list of My Skills !</h2>
                                     </div>
                                         <div className='theback'>
-                                        
                                         <FontAwesomeIcon icon={faHtml5} size='3x' />
                                         <FontAwesomeIcon icon={faCss3} size='3x' />
                                         <FontAwesomeIcon icon={faReact} size='3x' />

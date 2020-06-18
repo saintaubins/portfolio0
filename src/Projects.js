@@ -9,12 +9,14 @@ import docOffice from '../src/assets/docOffice.png';
 
 const Styles = styled.div`
     .projects {
-        background: url('https://images.unsplash.com/photo-1582634046772-e68ad47e5e33?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1241&q=80') no-repeat fixed bottom;
-        position: relative;
+        background-image: url('https://images.unsplash.com/photo-1582634046772-e68ad47e5e33?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1241&q=80');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
         border-radius: 7px;
         box-shadow: 10px 10px 10px black;
         opacity: 0.8;
-        margin: 0;
+       
     }
     .maincontainer {
         position: relative;
