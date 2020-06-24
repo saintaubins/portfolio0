@@ -14,8 +14,8 @@ export const Resume = () => {
                 'margin':'0',
                 'boxShadow': '10px 10px 10px black',
                 'position': 'absolute',
-                'height': '5300px'
-                }}>
+                'height': 'auto'
+            }}>
             <div  style={{
                     'borderRadius': '10px',
                     'boxShadow': '15px 15px 15px rgba(0,0,0,0.9)',

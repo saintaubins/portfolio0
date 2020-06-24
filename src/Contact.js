@@ -79,14 +79,14 @@ export class Contact extends Component {
                         'borderImage': 'url(https://webstockreview.net/images/picture-border-png-3.png) 20% round',
                     }}> 
                         <center>
-                            <div><h2 className='lG'>Contact Me</h2></div><br></br>
-                            <div><a href="mailto:saintaubins@gmail.com? subject='Lets Connect' " target='_blank' rel="noopener noreferrer" className='lG'>Email: saintaubins@gmail.com</a></div>
+                            <div style={{'word-wrap':'break-word'}}><h2 className='lG'>Contact Me</h2></div><br></br>
+                            <div style={{'word-wrap':'break-word'}}><a href="mailto:saintaubins@gmail.com? subject='Lets Connect' " target='_blank' rel="noopener noreferrer" className='lG'>Email: saintaubins@gmail.com</a></div>
                             <br></br>
-                            <div><a href='https://www.linkedin.com/in/sem-saint-aubin/' target='_blank' rel="noopener noreferrer" className='lG'>LinkedIn: https://www.linkedin.com/in/sem-saint-aubin</a></div>
+                            <div style={{'word-wrap':'break-word'}}><a href='https://www.linkedin.com/in/sem-saint-aubin/' target='_blank' rel="noopener noreferrer" className='lG'>LinkedIn: https://www.linkedin.com/in/sem-saint-aubin</a></div>
                             <br></br>
-                            <div><a href='https://github.com/saintaubins' target='_blank' rel="noopener noreferrer" className='lG'>Github: https://github.com/saintaubins</a></div>
+                            <div style={{'word-wrap':'break-word'}}><a href='https://github.com/saintaubins' target='_blank' rel="noopener noreferrer" className='lG'>Github: https://github.com/saintaubins</a></div>
                             <br></br>
-                            <div><p className='lG'>Cell Phone: 516-429-8578</p></div>
+                            <div style={{'word-wrap':'break-word'}}><p className='lG'>Cell Phone: 516-429-8578</p></div>
                     </center>
                 </div> 
                     <center>
@@ -103,7 +103,7 @@ export class Contact extends Component {
                             from={{
                                 width: '50%',
                                 background:
-                                'linear-gradient(to right, white, blue, grey, black)',
+                                'linear-gradient(to right, white, blue, red, grey, black)',
                                 transform:
                                 'translate3d(0px,0px,0px) scale(1) rotateZ(360deg)',
                                 boxShadow: '15px 15px 15px  rgba(0,0,0,0.9)',
@@ -113,7 +113,7 @@ export class Contact extends Component {
                                 width: '50%',
                                 padding: '15px',
                                 background:
-                                'linear-gradient(to right, white, blue, grey, black)',
+                                'linear-gradient(to right, white, blue, red, grey, black)',
                                 transform:
                                 'translate3d(0px,0px,0px) scale(1) rotateX(0deg)',
                                 boxShadow: '15px 15px 15px rgba(0,0,0,0.9)',
