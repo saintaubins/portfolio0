@@ -30,7 +30,7 @@ export const Resume = () => {
                     <center>
                         <h3>Sem Saint-Aubin</h3>
                         <h4>Software Engineer</h4>
-                        <p>saintaubins@gmail.com</p>
+                        <p><a href="mailto:saintaubins@gmail.com? subject='Lets Connect' " target='_blank' rel="noopener noreferrer" className='lG'>Email: saintaubins@gmail.com</a></p>
                         <p>Cell phone (516) 429-8578</p>
                         <div className='social-container'>
                             <a href='https://www.linkedin.com/in/sem-saint-aubin/'
@@ -66,7 +66,7 @@ export const Resume = () => {
                     <h5>Deployment:</h5>
                     <p>&emsp;Github Pages, Netlify, Heroku.</p>
                     <h5>I.T.:</h5>
-                    <p>&emsp;TCP/IP, DHCP, ARP, PING, FTP, IPCONFIG, TRACERT, TELNET, DOS, CLI.</p>
+                    <p>&emsp;TCP/IP, DHCP, ARP, PING, FTP, IPCONFIG, TRACERT, TELNET, DOS, CLI, A+, Net+, MCP, CNA.</p>
                     <h5>Interpersonal:</h5>
                     <p>&emsp;Marine Corps Veteran, Attention to detail, Courtesy, Fairness, Time management, Enthusiasm, Endurance.</p>
                     <br></br>
@@ -74,8 +74,8 @@ export const Resume = () => {
                     <h5>&emsp;Howl For Change, Brooklyn, NY	&emsp;&emsp;&emsp;&emsp;&emsp; 3/20 - Present</h5>
                     <h5>&emsp;&emsp;Full Stack Developer</h5>
                         <ul>
-                            <li>&emsp;Helped debug both frontend and backend for cross browser consistency.</li>
-                            <li>&emsp;Skillfully created logic for better user experience.</li>
+                            <li>&emsp;Helped debug both frontend and backend for cross browser consistency, including Safari, Chrome, Firefox for compliance.</li>
+                            <li>&emsp;Skillfully re-designed website for better user experience, mobile responsiveness, and web flow.</li>
                             <li>&emsp;Worked with API's such as Twitter, Facebook, and Instagram.</li>
                         </ul>
                     <h5>&emsp;General Assembly, New York, NY	&emsp;&emsp;&emsp;&emsp;&emsp; 11/19 - 2/20</h5>
@@ -88,9 +88,9 @@ export const Resume = () => {
                     <h5>&emsp;Carl Zeiss Meditec Dublin, CA	&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; 7/10 - 10/19</h5>
                     <h5>&emsp;&emsp;Field Service Engineer</h5>
                         <ul>
-                            <li>&emsp;Outstanding, understanding of basic electromechanical, electronic, and optical systems.</li>
-                            <li>&emsp;Excellent understanding of medical laser, OCT, IOL Master techniques and methodologies.</li>
-                            <li>&emsp;Successful verbal and written communication skills.</li>
+                            <li>&emsp;I worked in Hospitals, private practices, clinics, to trouble-shoot, electromechanical, electronic, and optical systems for ophthalmic instrumentation, where precision was a must, relating to surgery, and diagnosing disease.</li>
+                            <li>&emsp;I did PM’s, upgrades, and installation of over 20 different types of instruments, some include, YAG laser, OCT, IOL Master, HFA II, HFA III, and also did Data transfers from old to new instruments.</li>
+                            <li>&emsp;Documentation was a must, I have clear and understandable english, which informed both clients, and the company.</li>
                             <li>&emsp;Powerful computer skills with the ability to obtain specific certifications as required.</li>
                             <li>&emsp;Skillfully able to pass required training to service fine mechanics and optics. I have the ability to effectively service equipment once training is completed.</li>
                         </ul>
@@ -128,10 +128,10 @@ export const Resume = () => {
                             <li>Rank: Sergeant</li>
                         </ul>
                     <h4>Education:</h4> 
-                    <p><strong>&emsp;General Assembly </strong>Fellow, Feb 2020, Software Engineering Immersive, New York, NY. </p>
-                    <p><strong>&emsp;Hofstra University </strong>B.S. May 2007, Computer Engineering, Hempstead, NY. </p>
-                    <p><strong>&emsp;SUNY Nassau </strong>A.A.S May 2003, Computer Information Sysytems, Garden City, NY. </p>
-                    <p><strong>&emsp;Suburban Tech </strong>Fellow, Jan 2000 Digital Electronics and Computer Technology Hempstead, NY. </p>
+                    <p><strong>&emsp;General Assembly </strong>- Vocational Certificate - Feb 2020 - Software Engineering Immersive - New York, NY. </p>
+                    <p><strong>&emsp;Hofstra University </strong>- Bachelor's Degree - May 2007 - Computer Engineering - Hempstead, NY. </p>
+                    <p><strong>&emsp;SUNY Nassau </strong>Associates Degree - May 2003 - Computer Information Sysytems - Garden City, NY. </p>
+                    <p><strong>&emsp;Suburban Tech </strong>- Vocational Certificate - Jan 2000 - Digital Electronics and Computer Technology Hempstead - NY. </p>
                     <br></br>
 
             </div>

@@ -100,12 +100,29 @@ export const Skills = () => {
                                         <img style={{
                                         'borderRadius': '7px',
                                         'boxShadow': '10px 10px 10px darkgrey',
-                                        }}  width='80%'src={photo.url} alt='pictures of Skills'/>
+                                        }}  width='250px' height='300px' src={photo.url} alt='pictures of Skills'/>
                                     </center>   
                                 </div>
                             )
                         })}
                     </Slider>
+                    <br></br>
+                    <h4>Skills:</h4>
+                    <h5>Frontend:</h5>
+                    <p>&emsp;HTML5, CSS3, JavaScript, React, Bootstrap, Sass, NextJs, Gatsby, User Interface (UI), User Experience (UX).</p>
+                    <h5>Backend:</h5>
+                    <p>&emsp;Python Django, NodeJs, Express, Firebase, Restful API's.</p>
+                    <h5>Databases:</h5>
+                    <p>&emsp;MongoDb, PostgresqL, MySQL, JSON, XML.</p>
+                    <h5>Testing:</h5>
+                    <p>&emsp;Jest, Enzyme, Mocha, Chai, Supertest.</p>
+                    <h5>Deployment:</h5>
+                    <p>&emsp;Github Pages, Netlify, Heroku.</p>
+                    <h5>I.T.:</h5>
+                    <p>&emsp;TCP/IP, DHCP, ARP, PING, FTP, IPCONFIG, TRACERT, TELNET, DOS, CLI, A+, Net+, MCP, CNA.</p>
+                    <h5>Interpersonal:</h5>
+                    <p>&emsp;Marine Corps Veteran, Attention to detail, Courtesy, Fairness, Time management, Enthusiasm, Endurance.</p>
+                    <br></br>
                 </div> 
             </div>
         </React.Fragment>
