@@ -15,7 +15,6 @@ import {
 } from '@fortawesome/free-brands-svg-icons';
 import './App.css';
 // import nyPark1 from './assets/nyPark1.jpg';
-
 const Styles = styled.div`
     .nyPark {
         background-image: url('https://images.unsplash.com/photo-1582634046772-e68ad47e5e33?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1241&q=80');
