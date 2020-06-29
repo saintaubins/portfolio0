@@ -75,12 +75,6 @@ export const Projects = () => {
 //         leave: { opacity: 0, transform: "translate3d(-50%,0,0)" }
 //   });
     }
-//     const { location } = useContext(__RouterContext);
-//   const transitions = useTransition(location, location => location.pathname, {
-//       from: { opacity: 0, transform: "translate3d(100%,0,0)" },
-//       enter: { opacity: 1, transform: "translate3d(0%,0,0)" },
-//       leave: { opacity: 0, transform: "translate3d(-50%,0,0)" }
-//   });
     return (
         <React.Fragment>
             <div className="position-absolute w-100" style={{
@@ -109,11 +103,11 @@ export const Projects = () => {
                                                 </div> 
                                             </div>
                                             <div className='theback'>
-                                                <div><p>See the project</p>
+                                                <div><p>An Memory game, Called Simon  with JavaScript, CSS3, HTML5.</p>
                                                     <a href='https://saintaubins.github.io/MemoryGame/'
                                                         target='_blank' rel="noopener noreferrer" 
                                                         style={{'textDecoration': 'none', 'color': 'white'}}>
-                                                        <p>An Memory game, Called Simon  with JavaScript, CSS3, HTML5.</p>
+                                                        <p>Click here to see the project</p>
                                                     </a>
                                                     <a href='https://github.com/saintaubins/MemoryGame' 
                                                         target='_blank' rel='noopener noreferrer'
@@ -134,11 +128,12 @@ export const Projects = () => {
                                                 </div> 
                                             </div>
                                             <div className='theback'>
-                                                <div><p>See the project</p>
+                                                <div>
+                                                    <p>A Job Search App with Frontend React, styling with react Bootstrap, Github API Backend.</p>
                                                     <a href='https://eager-mahavira-49cb5b.netlify.com/'
                                                         target='_blank' rel="noopener noreferrer" 
                                                         style={{'textDecoration': 'none', 'color': 'white'}}>
-                                                        <p>A Job Search App with Frontend React, styling with react Bootstrap, Github API Backend.</p>
+                                                        <p>Click here to see the project</p>
                                                     </a>
                                                     <a href='https://github.com/saintaubins/JobSearch/tree/master/jobposts' 
                                                         target='_blank' rel='noopener noreferrer'
@@ -159,11 +154,12 @@ export const Projects = () => {
                                                     </div> 
                                                 </div>
                                                 <div className='theback'>
-                                                    <div><p>See the project</p>
+                                                    <div>
+                                                        <p>A Doctor's Office App with Backend Firebase, Frontend React, and styling with react Bootstrap.</p>
                                                         <a href='https://seiproj4.herokuapp.com/'
                                                             target='_blank' rel="noopener noreferrer" 
                                                             style={{'textDecoration': 'none', 'color': 'white'}}>
-                                                            <p>A Doctor's Office App with Backend Firebase, Frontend React, and styling with react Bootstrap.</p>
+                                                            <p>Click here to see the project</p>
                                                         </a>
                                                         <a href='https://github.com/saintaubins/doctorsOffice' 
                                                             target='_blank' rel='noopener noreferrer'
@@ -183,14 +179,15 @@ export const Projects = () => {
                                                     <img src={cardGame} alt='img of game' style={{'width':'100%', 'borderRadius':'7px', 'boxShadow':'7px 7px 7px black'}}></img>
                                                 </div> 
                                             </div>
-                                            <div className='theback'>
-                                                <div><p>See the project</p>
+                                                <div className='theback'>
+                                                    <div>
+                                                    <p>An intuitive card game, with JavaScript, CSS3, HTML5.</p>
                                                     <a href='https://flamboyant-allen-c08689.netlify.com/'
                                                         target='_blank' rel="noopener noreferrer" 
                                                         style={{'textDecoration': 'none', 'color': 'white'}}>
-                                                        <p>An intuitive card game, with JavaScript, CSS3, HTML5.</p>
+                                                        <p>Click here to see the project</p>
                                                     </a>
-                                                    <a href='' 
+                                                    <a href='https://flamboyant-allen-c08689.netlify.com/' 
                                                         target='_blank' rel='noopener noreferrer'
                                                         style={{'textDecoration': 'none', 'color': 'white'}}>
                                                         <p>Click here to see the Code</p>
