@@ -1,11 +1,12 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Jumbotron as Jumbo } from 'react-bootstrap';
 import styled from 'styled-components';
-// import './App.css';
+import { Route, Switch, __RouterContext } from 'react-router-dom';
 import cardGame from '../src/assets/cardGame.png';
 import memGame from '../src/assets/memGame.png';
 import jobSearch from '../src/assets/jobSearch.png';
 import docOffice from '../src/assets/docOffice.png';
+import { useTransition, animated } from 'react-spring';
 
 const Styles = styled.div`
     .projects {
@@ -62,6 +63,24 @@ const Styles = styled.div`
 `;
 
 export const Projects = () => {
+
+    function flipCard() {
+        console.log('called function')
+        //transform: rotateX(180deg);
+        //translateX(180deg);
+        //const { location } = useContext(__RouterContext);
+//         const transitions = useTransition(location, location => location.pathname, {
+//         from: { opacity: 0, transform: "translate3d(100%,0,0)" },
+//         enter: { opacity: 1, transform: "translate3d(0%,0,0)" },
+//         leave: { opacity: 0, transform: "translate3d(-50%,0,0)" }
+//   });
+    }
+//     const { location } = useContext(__RouterContext);
+//   const transitions = useTransition(location, location => location.pathname, {
+//       from: { opacity: 0, transform: "translate3d(100%,0,0)" },
+//       enter: { opacity: 1, transform: "translate3d(0%,0,0)" },
+//       leave: { opacity: 0, transform: "translate3d(-50%,0,0)" }
+//   });
     return (
         <React.Fragment>
             <div className="position-absolute w-100" style={{
@@ -79,25 +98,7 @@ export const Projects = () => {
                             <div className='overlay'></div>
                             <br></br>
                                 <center>
-                                    <div className='maincontainer'>
-                                        <div className='thecard'>
-                                            <div className='thefront'>
-                                                <div>
-                                                    <h3>G.A. Card Game.</h3>
-                                                    <img src={cardGame} alt='img of game' style={{'width':'100%', 'borderRadius':'7px', 'boxShadow':'7px 7px 7px black'}}></img>
-                                                </div> 
-                                            </div>
-                                            <div className='theback'>
-                                                <div>
-                                                    <a href='https://flamboyant-allen-c08689.netlify.com/'
-                                                        target='_blank' rel="noopener noreferrer" 
-                                                        style={{'textDecoration': 'none', 'color': 'white'}}>
-                                                        <p>An intuitive card game, with JavaScript, CSS3, HTML5.</p>
-                                                    </a>
-                                                </div> 
-                                            </div>
-                                        </div>
-                                    </div>
+                                    
                                     <br></br>
                                     <div className='maincontainer'>
                                         <div className='thecard'>
@@ -108,11 +109,16 @@ export const Projects = () => {
                                                 </div> 
                                             </div>
                                             <div className='theback'>
-                                                <div>
+                                                <div><p>See the project</p>
                                                     <a href='https://saintaubins.github.io/MemoryGame/'
                                                         target='_blank' rel="noopener noreferrer" 
                                                         style={{'textDecoration': 'none', 'color': 'white'}}>
                                                         <p>An Memory game, Called Simon  with JavaScript, CSS3, HTML5.</p>
+                                                    </a>
+                                                    <a href='https://github.com/saintaubins/MemoryGame' 
+                                                        target='_blank' rel='noopener noreferrer'
+                                                        style={{'textDecoration': 'none', 'color': 'white'}}>
+                                                        <p>Click here to see the Code</p>
                                                     </a>
                                                 </div> 
                                             </div>
@@ -128,11 +134,16 @@ export const Projects = () => {
                                                 </div> 
                                             </div>
                                             <div className='theback'>
-                                                <div>
-                                                <a href='https://eager-mahavira-49cb5b.netlify.com/'
+                                                <div><p>See the project</p>
+                                                    <a href='https://eager-mahavira-49cb5b.netlify.com/'
                                                         target='_blank' rel="noopener noreferrer" 
                                                         style={{'textDecoration': 'none', 'color': 'white'}}>
                                                         <p>A Job Search App with Frontend React, styling with react Bootstrap, Github API Backend.</p>
+                                                    </a>
+                                                    <a href='https://github.com/saintaubins/JobSearch/tree/master/jobposts' 
+                                                        target='_blank' rel='noopener noreferrer'
+                                                        style={{'textDecoration': 'none', 'color': 'white'}}>
+                                                        <p>Click here to see the Code</p>
                                                     </a>
                                                 </div> 
                                             </div>
@@ -148,17 +159,46 @@ export const Projects = () => {
                                                     </div> 
                                                 </div>
                                                 <div className='theback'>
-                                                    <div>
-                                                    <a href='https://seiproj4.herokuapp.com/'
+                                                    <div><p>See the project</p>
+                                                        <a href='https://seiproj4.herokuapp.com/'
                                                             target='_blank' rel="noopener noreferrer" 
                                                             style={{'textDecoration': 'none', 'color': 'white'}}>
                                                             <p>A Doctor's Office App with Backend Firebase, Frontend React, and styling with react Bootstrap.</p>
+                                                        </a>
+                                                        <a href='https://github.com/saintaubins/doctorsOffice' 
+                                                            target='_blank' rel='noopener noreferrer'
+                                                            style={{'textDecoration': 'none', 'color': 'white'}}>
+                                                            <p>Click here to see the Code</p>
                                                         </a>
                                                     </div> 
                                                 </div>
                                             </div>
                                         </div>
                                     <br></br>
+                                    <div onClick={flipCard} className='maincontainer'>
+                                        <div className='thecard'>
+                                            <div className='thefront'>
+                                                <div>
+                                                    <h3>G.A. Card Game.</h3>
+                                                    <img src={cardGame} alt='img of game' style={{'width':'100%', 'borderRadius':'7px', 'boxShadow':'7px 7px 7px black'}}></img>
+                                                </div> 
+                                            </div>
+                                            <div className='theback'>
+                                                <div><p>See the project</p>
+                                                    <a href='https://flamboyant-allen-c08689.netlify.com/'
+                                                        target='_blank' rel="noopener noreferrer" 
+                                                        style={{'textDecoration': 'none', 'color': 'white'}}>
+                                                        <p>An intuitive card game, with JavaScript, CSS3, HTML5.</p>
+                                                    </a>
+                                                    <a href='' 
+                                                        target='_blank' rel='noopener noreferrer'
+                                                        style={{'textDecoration': 'none', 'color': 'white'}}>
+                                                        <p>Click here to see the Code</p>
+                                                    </a>
+                                                </div> 
+                                            </div>
+                                        </div>
+                                    </div>
                                 </center>
                             </Jumbo>
                         </Styles>
