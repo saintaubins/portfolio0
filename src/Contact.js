@@ -33,10 +33,46 @@ export class Contact extends Component {
                 this.setState({isSignedIn: user})
                 console.log('user', user)
             })
-
         }
+        
     
     render() {
+        const doTransition = () => {
+                console.log('Div clicked')
+                    // <Spring 
+                    //     config={
+                    //         mass: 8,
+                    //         tension: 100,
+                    //         friction: 50,
+                    //         clamp: false,
+                    //         precision: 0.001,
+                    //         velocity: 30,
+                    //         delay: 1100,
+                    //     } 
+                    //     from={
+                    //         width: '50%',
+                    //         background:
+                    //         'linear-gradient(to right, white, blue, red, grey, black)',
+                    //         transform:
+                    //         'translate3d(0px,0px,0px) scale(1) rotateZ(360deg)',
+                    //         boxShadow: '15px 15px 15px  rgba(0,0,0,0.9)',
+                    //     }
+                    //     to={
+                    //         transitionDuration: '0.7s',
+                    //         width: '50%',
+                    //         padding: '15px',
+                    //         background:
+                    //         'linear-gradient(to right, white, blue, red, grey, black)',
+                    //         transform:
+                    //         'translate3d(0px,0px,0px) scale(1) rotateX(0deg)',
+                    //         boxShadow: '15px 15px 15px rgba(0,0,0,0.9)',
+                    //         borderRadius: '7px'
+                    //     }>
+                    //     {props => <div style={{props}}><h2 className='lG'>Sem Saint-Aubin</h2></div>}
+                    // </Spring>
+    
+        }
+        
         return (
             <React.Fragment>
             <div className='Contact'>
@@ -67,7 +103,7 @@ export class Contact extends Component {
                     'boxShadow': '10px 10px 10px black',
                     'position': 'absolute',
                     'height': '1000px'
-                    }} className="position-absolute w-100">
+                }} className="position-absolute w-100">
                     <div style={{
                         'borderRadius': '7px',
                         'boxShadow': '15px 15px 15px rgba(0,0,0,0.6)',
@@ -79,48 +115,50 @@ export class Contact extends Component {
                         'borderImage': 'url(https://webstockreview.net/images/picture-border-png-3.png) 20% round',
                     }}> 
                         <center>
-                            <div style={{'word-wrap':'break-word'}}><h2 className='lG'>Contact Me</h2></div><br></br>
-                            <div style={{'word-wrap':'break-word'}}><a href="mailto:saintaubins@gmail.com? subject='Lets Connect' " target='_blank' rel="noopener noreferrer" className='lG'>Email: saintaubins@gmail.com</a></div>
+                            <div style={{wordWrap:'break-word'}}><h2 className='lG'>Contact Me</h2></div><br></br>
+                            <div style={{wordWrap:'break-word'}}><a href="mailto:saintaubins@gmail.com? subject='Lets Connect' " target='_blank' rel="noopener noreferrer" className='lG'>Email: saintaubins@gmail.com</a></div>
                             <br></br>
-                            <div style={{'word-wrap':'break-word'}}><a href='https://www.linkedin.com/in/sem-saint-aubin/' target='_blank' rel="noopener noreferrer" className='lG'>LinkedIn: https://www.linkedin.com/in/sem-saint-aubin</a></div>
+                            <div style={{wordWrap:'break-word'}}><a href='https://www.linkedin.com/in/sem-saint-aubin/' target='_blank' rel="noopener noreferrer" className='lG'>LinkedIn: https://www.linkedin.com/in/sem-saint-aubin</a></div>
                             <br></br>
-                            <div style={{'word-wrap':'break-word'}}><a href='https://github.com/saintaubins' target='_blank' rel="noopener noreferrer" className='lG'>Github: https://github.com/saintaubins</a></div>
+                            <div style={{wordWrap:'break-word'}}><a href='https://github.com/saintaubins' target='_blank' rel="noopener noreferrer" className='lG'>Github: https://github.com/saintaubins</a></div>
                             <br></br>
-                            <div style={{'word-wrap':'break-word'}}><p className='lG'>Cell Phone: 516-429-8578</p></div>
-                    </center>
-                </div> 
+                            <div style={{wordWrap:'break-word'}}><p className='lG'>Cell Phone: 516-429-8578</p></div>
+                        </center>
+                    </div> 
                     <center>
-                        <Spring 
-                            config={{
-                                mass: 8,
-                                tension: 100,
-                                friction: 50,
-                                clamp: false,
-                                precision: 0.001,
-                                velocity: 30,
-                                delay: 1100,
-                            }} 
-                            from={{
-                                width: '50%',
-                                background:
-                                'linear-gradient(to right, white, blue, red, grey, black)',
-                                transform:
-                                'translate3d(0px,0px,0px) scale(1) rotateZ(360deg)',
-                                boxShadow: '15px 15px 15px  rgba(0,0,0,0.9)',
-                            }}
-                            to={{
-                                transitionDuration: '0.7s',
-                                width: '50%',
-                                padding: '15px',
-                                background:
-                                'linear-gradient(to right, white, blue, red, grey, black)',
-                                transform:
-                                'translate3d(0px,0px,0px) scale(1) rotateX(0deg)',
-                                boxShadow: '15px 15px 15px rgba(0,0,0,0.9)',
-                                borderRadius: '7px',
-                            }}>
-                            {props => <div style={props}><h2 className='lG'>Sem Saint-Aubin</h2></div>}
-                        </Spring>
+                        <div onClick={doTransition}>
+                            <Spring 
+                                config={{
+                                    mass: 8,
+                                    tension: 100,
+                                    friction: 50,
+                                    clamp: false,
+                                    precision: 0.001,
+                                    velocity: 30,
+                                    delay: 1100,
+                                }} 
+                                from={{
+                                    width: '50%',
+                                    background:
+                                    'linear-gradient(to right, white, blue, red, grey, black)',
+                                    transform:
+                                    'translate3d(0px,0px,0px) scale(1) rotateZ(360deg)',
+                                    boxShadow: '15px 15px 15px  rgba(0,0,0,0.9)',
+                                }}
+                                to={{
+                                    transitionDuration: '0.7s',
+                                    width: '50%',
+                                    padding: '15px',
+                                    background:
+                                    'linear-gradient(to right, white, blue, red, grey, black)',
+                                    transform:
+                                    'translate3d(0px,0px,0px) scale(1) rotateX(0deg)',
+                                    boxShadow: '15px 15px 15px rgba(0,0,0,0.9)',
+                                    borderRadius: '7px',
+                                }}>
+                                {props => <div style={props}><h2 className='lG'>Sem Saint-Aubin</h2></div>}
+                            </Spring>
+                        </div>
                     </center>
                 </div>
             </React.Fragment>
