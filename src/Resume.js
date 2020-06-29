@@ -19,10 +19,10 @@ export const Resume = () => {
             <div  style={{
                     'borderRadius': '10px',
                     'boxShadow': '15px 15px 15px rgba(0,0,0,0.9)',
-                    'background': 'rgba(0,0,0,0.5)',
+                    'backgroundColor': 'rgba(0,0,0,0.5)',
                     'color': 'lightgrey',
                     'margin': '0',
-                    'border': '60px solid transparent',
+                    'border': '7vh solid transparent',
                     'borderImage': 'url(https://www.freepnglogos.com/uploads/border-png/double-line-border-png-10.png) 20% round',
         
                     //Social Follow Stuff

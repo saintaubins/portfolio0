@@ -40,12 +40,11 @@ const Styles = styled.div`
         height: 100%;
         backface-visibility: hidden;
         background: rgba(0,0,0,0.7);
-        border-radius: 10px;
+        border-radius: 7px;
         color: white;
-        box-shadow: 10px 10px 10px rgba(0,0,0,0.8);
+        box-shadow: 7px 7px 7px rgba(0,0,0,0.8);
         padding: 1%; 
-        border: 20px solid transparent;
-        padding: 15px;
+        border: 4vh solid transparent;
         border-image: url(https://www.freepnglogos.com/uploads/border-png/double-line-border-png-10.png) 20% round;
     }
     .theback {
@@ -55,10 +54,12 @@ const Styles = styled.div`
         backface-visibility: hidden;
         background: rgba(0,0,0,0.7);
         color: white;
-        border-radius: 10px;
+        border-radius: 7px;
         transform: rotateX(180deg);
-        box-shadow: 5px 5px 5px rgba(0,0,0,0.9);
-        padding: 10%; 
+        box-shadow: 7px 7px 7px rgba(0,0,0,0.9);
+        padding: 1%;
+        border: 4vh solid transparent;
+        border-image: url(https://www.freepnglogos.com/uploads/border-png/double-line-border-png-10.png) 20% round; 
     }
 `;
 

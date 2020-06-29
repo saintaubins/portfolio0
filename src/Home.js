@@ -50,10 +50,9 @@ const Styles = styled.div`
         background: rgba(0,0,0,0.7);
         border-radius: 10px;
         color: white;
-        box-shadow: 10px 10px 10px rgba(0,0,0,0.8);
+        box-shadow: 7px 7px 7px rgba(0,0,0,0.8);
         padding: 1%; 
-        border: 10px solid transparent;
-        padding: 15px;
+        border: 4vh solid transparent;
         border-image: url(https://www.freepnglogos.com/uploads/border-png/double-line-border-png-10.png) 20% round;
     }
     .theback {
@@ -65,8 +64,10 @@ const Styles = styled.div`
         color: white;
         border-radius: 10px;
         transform: rotateY(180deg);
-        box-shadow: 5px 5px 5px rgba(0,0,0,0.9);
-        padding: 1%; 
+        box-shadow: 7px 7px 7px rgba(0,0,0,0.9);
+        padding: 1%;
+        border: 4vh solid transparent;
+        border-image: url(https://www.freepnglogos.com/uploads/border-png/double-line-border-png-10.png) 20% round; 
     }
 `;
 
@@ -128,7 +129,7 @@ export const Home = () => {
                                         <FontAwesomeIcon icon={faJava} size='3x' />
                                         {/* <FontAwesomeIcon icon={faHeroku} size='3x' /> */}
                                         {/* <FontAwesomeIcon icon={faMocha} size='3x' /> */}
-                                        <h3>These skills are Only a few of my Stack, Please Also Visit the Skills Link Above to see more of my skills !</h3>
+                                        <p>Please Also Visit the Skills Link Above to see more of my skills !</p>
                                     </div>
                                 </div>
                             </div>

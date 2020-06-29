@@ -130,7 +130,7 @@ export const Skills = () => {
         <React.Fragment>
             <div style={{
                 'padding':'5%',
-                'background':'rgba(0,0,0,0.8)', 
+                'backgroundColor':'rgba(0,0,0,0.8)', 
                 'margin':'0',
                 'boxShadow': '10px 10px 10px black',
                 'position': 'absolute',
@@ -153,9 +153,9 @@ export const Skills = () => {
                             return(
                                     <div key={photo.name}>
                                             <img style={{
-                                            'borderRadius': '7px',
+                                            'borderRadius': '5px',
                                             'boxShadow': '10px 10px 10px darkgrey'
-                                            }} width='207px' height='225px' src={photo.url} alt='pictures of Skills'/>
+                                            }} width='157px' height='175px' src={photo.url} alt='pictures of Skills'/>
                                     </div>
                                 )
                             })}
@@ -167,9 +167,9 @@ export const Skills = () => {
                             return(
                                     <div key={photo.name}>
                                             <img style={{
-                                            'borderRadius': '7px',
+                                            'borderRadius': '5px',
                                             'boxShadow': '10px 10px 10px darkgrey'
-                                            }} width='207px' height='225px' src={photo.url} alt='pictures of Skills'/>
+                                            }} width='157px' height='175px' src={photo.url} alt='pictures of Skills'/>
                                     </div>
                                 )
                             })}
@@ -181,9 +181,9 @@ export const Skills = () => {
                             return(
                                     <div key={photo.name}>
                                             <img style={{
-                                            'borderRadius': '7px',
+                                            'borderRadius': '5px',
                                             'boxShadow': '10px 10px 10px darkgrey'
-                                            }} width='207px' height='225px' src={photo.url} alt='pictures of Skills'/>
+                                            }} width='157px' height='175px' src={photo.url} alt='pictures of Skills'/>
                                     </div>
                                 )
                             })}
@@ -195,9 +195,9 @@ export const Skills = () => {
                             return(
                                     <div key={photo.name}>
                                             <img style={{
-                                            'borderRadius': '7px',
+                                            'borderRadius': '5px',
                                             'boxShadow': '10px 10px 10px darkgrey'
-                                            }} width='207px' height='225px' src={photo.url} alt='pictures of Skills'/>
+                                            }} width='157px' height='175px' src={photo.url} alt='pictures of Skills'/>
                                     </div>
                                 )
                             })}
@@ -209,9 +209,9 @@ export const Skills = () => {
                             return(
                                     <div key={photo.name}>
                                             <img style={{
-                                            'borderRadius': '7px',
+                                            'borderRadius': '5px',
                                             'boxShadow': '10px 10px 10px darkgrey'
-                                            }} width='207px' height='225px' src={photo.url} alt='pictures of Skills'/>
+                                            }} width='157px' height='175px' src={photo.url} alt='pictures of Skills'/>
                                     </div>
                                 )
                             })}
@@ -223,9 +223,9 @@ export const Skills = () => {
                             return(
                                     <div key={photo.name}>
                                             <img style={{
-                                            'borderRadius': '7px',
+                                            'borderRadius': '5px',
                                             'boxShadow': '10px 10px 10px darkgrey'
-                                            }} width='207px' height='225px' src={photo.url} alt='pictures of Skills'/>
+                                            }} width='157px' height='175px' src={photo.url} alt='pictures of Skills'/>
                                     </div>
                                 )
                             })}
@@ -237,9 +237,9 @@ export const Skills = () => {
                             return(
                                     <div key={photo.name}>
                                             <img style={{
-                                            'borderRadius': '7px',
+                                            'borderRadius': '5px',
                                             'boxShadow': '10px 10px 10px darkgrey'
-                                            }} width='207px' height='225px' src={photo.url} alt='pictures of Skills'/>
+                                            }} width='157px' height='175px' src={photo.url} alt='pictures of Skills'/>
                                     </div>
                                 )
                             })}
