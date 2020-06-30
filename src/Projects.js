@@ -1,12 +1,12 @@
-import React, { useContext } from 'react';
+import React from 'react';
 import { Jumbotron as Jumbo } from 'react-bootstrap';
 import styled from 'styled-components';
-import { Route, Switch, __RouterContext } from 'react-router-dom';
+//import { Route, Switch, __RouterContext } from 'react-router-dom';
 import cardGame from '../src/assets/cardGame.png';
 import memGame from '../src/assets/memGame.png';
 import jobSearch from '../src/assets/jobSearch.png';
 import docOffice from '../src/assets/docOffice.png';
-import { useTransition, animated } from 'react-spring';
+//import { useTransition, animated } from 'react-spring';
 
 const Styles = styled.div`
     .projects {
@@ -58,7 +58,7 @@ const Styles = styled.div`
         transform: rotateX(180deg);
         box-shadow: 7px 7px 7px rgba(0,0,0,0.9);
         padding: 1%;
-        border: 4vh solid transparent;
+        border: 2.5vh solid transparent;
         border-image: url(https://www.freepnglogos.com/uploads/border-png/double-line-border-png-10.png) 20% round; 
     }
 `;
