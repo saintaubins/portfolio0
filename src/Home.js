@@ -21,8 +21,9 @@ const Styles = styled.div`
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-position: center;
+        background-size: cover;
         border-radius: 7px;
-        box-shadow: 10px 10px 10px black;
+        box-shadow: 10px 10px 10px 10px black;
         opacity: 0.8;
     }
     .maincontainer {
@@ -65,7 +66,6 @@ const Styles = styled.div`
         border-radius: 10px;
         transform: rotateY(180deg);
         box-shadow: 7px 7px 7px rgba(0,0,0,0.9);
-        padding: 1%;
         border: 4vh solid transparent;
         border-image: url(https://www.freepnglogos.com/uploads/border-png/double-line-border-png-10.png) 20% round; 
     }

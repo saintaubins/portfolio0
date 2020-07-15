@@ -14,8 +14,9 @@ const Styles = styled.div`
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-position: center;
+        background-size: cover;
         border-radius: 7px;
-        box-shadow: 10px 10px 10px black;
+        box-shadow: 10px 10px 10px 10px black;
         opacity: 0.8;
        
     }
@@ -31,9 +32,13 @@ const Styles = styled.div`
         transform-style: preserve-3d;
         transition: all 2.3s ease;
     }
-    .thecard:hover {
+    .thecard:hover, .thecard:active {
         transform: rotateX(180deg);
     }
+    // .thecard clicked {
+    //     //transform: rotateX(180deg);
+    //     color: red;
+    // }
     .thefront {
         position: absolute;
         width: 100%;
@@ -57,7 +62,6 @@ const Styles = styled.div`
         border-radius: 7px;
         transform: rotateX(180deg);
         box-shadow: 7px 7px 7px rgba(0,0,0,0.9);
-        padding: 1%;
         border: 2.5vh solid transparent;
         border-image: url(https://www.freepnglogos.com/uploads/border-png/double-line-border-png-10.png) 20% round; 
     }
@@ -70,10 +74,10 @@ export const Projects = () => {
         //transform: rotateX(180deg);
         //translateX(180deg);
         //const { location } = useContext(__RouterContext);
-//         const transitions = useTransition(location, location => location.pathname, {
-//         from: { opacity: 0, transform: "translate3d(100%,0,0)" },
-//         enter: { opacity: 1, transform: "translate3d(0%,0,0)" },
-//         leave: { opacity: 0, transform: "translate3d(-50%,0,0)" }
+        //const transitions = useTransition(location, location => location.pathname, {
+        // from: { opacity: 0, transform: "translate3d(100%,0,0)" },
+        // enter: { opacity: 1, transform: "translate3d(0%,0,0)" },
+        // leave: { opacity: 0, transform: "translate3d(-50%,0,0)" }
 //   });
     }
     return (
@@ -172,7 +176,7 @@ export const Projects = () => {
                                             </div>
                                         </div>
                                     <br></br>
-                                    <div onClick={flipCard} className='maincontainer'>
+                                    <div  className='maincontainer'>
                                         <div className='thecard'>
                                             <div className='thefront'>
                                                 <div>
