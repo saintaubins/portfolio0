@@ -6,6 +6,7 @@ import cardGame from '../src/assets/cardGame.png';
 import memGame from '../src/assets/memGame.png';
 import jobSearch from '../src/assets/jobSearch.png';
 import docOffice from '../src/assets/docOffice.png';
+import todo from '../src/assets/Todo.png';
 //import { useTransition, animated } from 'react-spring';
 
 const Styles = styled.div`
@@ -141,6 +142,32 @@ export const Projects = () => {
                                                         <p>Click here to see the project</p>
                                                     </a>
                                                     <a href='https://github.com/saintaubins/JobSearch/tree/master/jobposts' 
+                                                        target='_blank' rel='noopener noreferrer'
+                                                        style={{'textDecoration': 'none', 'color': 'white'}}>
+                                                        <p>Click here to see the Code</p>
+                                                    </a>
+                                                </div> 
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <br></br>
+                                    <div className='maincontainer'>
+                                        <div className='thecard'>
+                                            <div className='thefront'>
+                                                <div>
+                                                    <h3>My Todo. </h3> 
+                                                    <img src={todo} alt='img of search' style={{'width':'100%', 'borderRadius':'7px', 'boxShadow':'7px 7px 7px black'}}></img>
+                                                </div> 
+                                            </div>
+                                            <div className='theback'>
+                                                <div>
+                                                    <p>A Todo App with Frontend Angular, styling with Bootstrap,Spring Boot Backend.</p>
+                                                    <a href='https://brave-ardinghelli-7b44c2.netlify.app/'
+                                                        target='_blank' rel="noopener noreferrer" 
+                                                        style={{'textDecoration': 'none', 'color': 'white'}}>
+                                                        <p>Click here to see the project</p>
+                                                    </a>
+                                                    <a href='https://github.com/saintaubins/angular-todo' 
                                                         target='_blank' rel='noopener noreferrer'
                                                         style={{'textDecoration': 'none', 'color': 'white'}}>
                                                         <p>Click here to see the Code</p>
