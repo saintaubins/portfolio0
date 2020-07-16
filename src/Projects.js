@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Jumbotron as Jumbo } from 'react-bootstrap';
 import styled from 'styled-components';
 //import { Route, Switch, __RouterContext } from 'react-router-dom';
@@ -7,6 +7,8 @@ import memGame from '../src/assets/memGame.png';
 import jobSearch from '../src/assets/jobSearch.png';
 import docOffice from '../src/assets/docOffice.png';
 import todo from '../src/assets/Todo.png';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 //import { useTransition, animated } from 'react-spring';
 
 const Styles = styled.div`
@@ -70,6 +72,10 @@ const Styles = styled.div`
 
 export const Projects = () => {
 
+    useEffect(() => {
+       Aos.init({duration: 2000}); 
+    }, []);
+
     function flipCard() {
         console.log('called function')
         //transform: rotateX(180deg);
@@ -100,7 +106,7 @@ export const Projects = () => {
                                 <center>
                                     
                                     <br></br>
-                                    <div className='maincontainer'>
+                                    <div data-aos="fade-down" className='maincontainer'>
                                         <div className='thecard'>
                                             <div className='thefront'>
                                                 <div>
@@ -125,7 +131,7 @@ export const Projects = () => {
                                         </div>
                                     </div>
                                     <br></br>
-                                    <div className='maincontainer'>
+                                    <div data-aos="flip-left" className='maincontainer'>
                                         <div className='thecard'>
                                             <div className='thefront'>
                                                 <div>
@@ -151,8 +157,8 @@ export const Projects = () => {
                                         </div>
                                     </div>
                                     <br></br>
-                                    <div className='maincontainer'>
-                                        <div className='thecard'>
+                                    <div data-aos="fade-up"className='maincontainer'>
+                                        <div  className='thecard'>
                                             <div className='thefront'>
                                                 <div>
                                                     <h3>My Todo. </h3> 
@@ -170,14 +176,14 @@ export const Projects = () => {
                                                     <a href='https://github.com/saintaubins/angular-todo' 
                                                         target='_blank' rel='noopener noreferrer'
                                                         style={{'textDecoration': 'none', 'color': 'white'}}>
-                                                        <p>Click here to see the Code</p>
+                                                        <p>Click here to see the Frontend Code</p>
                                                     </a>
                                                 </div> 
                                             </div>
                                         </div>
                                     </div>
                                     <br></br>
-                                    <div className='maincontainer'>
+                                    <div data-aos="fade-right" className='maincontainer'>
                                             <div className='thecard'>
                                                 <div className='thefront'>
                                                     <div>
@@ -196,14 +202,14 @@ export const Projects = () => {
                                                         <a href='https://github.com/saintaubins/doctorsOffice' 
                                                             target='_blank' rel='noopener noreferrer'
                                                             style={{'textDecoration': 'none', 'color': 'white'}}>
-                                                            <p>Click here to see the Code</p>
+                                                            <p>Click here to see the Frontend Code</p>
                                                         </a>
                                                     </div> 
                                                 </div>
                                             </div>
                                         </div>
                                     <br></br>
-                                    <div  className='maincontainer'>
+                                    <div data-aos="fade-left" className='maincontainer'>
                                         <div className='thecard'>
                                             <div className='thefront'>
                                                 <div>

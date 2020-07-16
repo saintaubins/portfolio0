@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Jumbotron as Jumbo } from 'react-bootstrap';
 import styled from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -14,7 +14,9 @@ import {
     //faMocha
 } from '@fortawesome/free-brands-svg-icons';
 import './App.css';
-// import nyPark1 from './assets/nyPark1.jpg';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
+
 const Styles = styled.div`
     .nyPark {
         background-image: url('https://images.unsplash.com/photo-1582634046772-e68ad47e5e33?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1241&q=80');
@@ -72,6 +74,10 @@ const Styles = styled.div`
 `;
 
 export const Home = () => {
+
+    useEffect(() => {
+        Aos.init({duration: 2000}); 
+     }, []);
     
     return (
         <React.Fragment>
@@ -84,7 +90,7 @@ export const Home = () => {
                     <Jumbo fluid className='nyPark'>
                         <div className='overlay'></div>
                         <center>
-                            <div className='maincontainer'>
+                            <div data-aos="fade-down" className='maincontainer'>
                                 <div className='thecard'>
                                     <div className='thefront'>
                                         <h2>What Can I offer ?</h2>
@@ -99,7 +105,7 @@ export const Home = () => {
                                     </div>
                                 </div>
                             </div> <br></br>
-                            <div className='maincontainer'>
+                            <div data-aos="fade-up" className='maincontainer'>
                                 <div className='thecard'>
                                     <div className='thefront'>
                                         <h2>What else Can I offer ?</h2>
@@ -114,7 +120,7 @@ export const Home = () => {
                                     </div>
                                 </div>
                             </div><br></br>
-                            <div className='maincontainer'>
+                            <div data-aos="fade-right" className='maincontainer'>
                                 <div className='thecard'>
                                     <div className='thefront'>
                                         <h2>Flip This card to See a list of My Skills !</h2>
