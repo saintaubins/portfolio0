@@ -1,8 +1,10 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 import Slider from 'react-slick';
 import './App.css';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 const front = [
     {name: 'Photo 1',
@@ -124,6 +126,10 @@ export const Skills = () => {
         slidesToScroll: 1,
         //className: "slides2"
     }
+
+    useEffect(() => {
+        Aos.init({duration: 2000}); 
+     }, []);
     
     //get settings from => https://react-slick.neostack.com/
     return (
@@ -147,104 +153,118 @@ export const Skills = () => {
                 }} >
                     <center>
                     <h4>Skills:</h4><br />
-                    <h5>Frontend:</h5><br />
-                    <Slider {...settings}>
-                        {front.map((photo) => {
-                            return(
+                    <div data-aos="fade-down">
+                        <h5>Frontend:</h5><br />
+                        <Slider {...settings}>
+                            {front.map((photo) => {
+                                return(
+                                        <div key={photo.name}>
+                                                <img style={{
+                                                'borderRadius': '5px',
+                                                'boxShadow': '10px 10px 10px darkgrey'
+                                                }} width='157px' height='175px' src={photo.url} alt='pictures of Skills'/>
+                                        </div>
+                                    )
+                                })}
+                        </Slider><br />
+                        <p>&emsp;HTML5, CSS3, JavaScript, React, Bootstrap, Sass, NextJs, Gatsby, User Interface (UI), User Experience (UX).</p>
+                    </div>
+                    <div data-aos="fade-up">
+                        <h5>Backend:</h5><br />
+                        <Slider {...settings}>
+                            {back.map((photo) => {
+                                return(
                                     <div key={photo.name}>
-                                            <img style={{
-                                            'borderRadius': '5px',
-                                            'boxShadow': '10px 10px 10px darkgrey'
-                                            }} width='157px' height='175px' src={photo.url} alt='pictures of Skills'/>
-                                    </div>
-                                )
-                            })}
-                    </Slider><br />
-                    <p>&emsp;HTML5, CSS3, JavaScript, React, Bootstrap, Sass, NextJs, Gatsby, User Interface (UI), User Experience (UX).</p>
-                    <h5>Backend:</h5><br />
-                    <Slider {...settings}>
-                        {back.map((photo) => {
-                            return(
+                                                <img style={{
+                                                    'borderRadius': '5px',
+                                                    'boxShadow': '10px 10px 10px darkgrey'
+                                                }} width='157px' height='175px' src={photo.url} alt='pictures of Skills'/>
+                                        </div>
+                                    )
+                                })}
+                        </Slider><br />
+                        <p>&emsp;Python, Django, NodeJs, Express, Firebase, Restful API's.</p>
+                    </div>
+                    <div data-aos="fade-down">
+                        <h5>Databases:</h5><br />
+                        <Slider {...settings}>
+                            {db.map((photo) => {
+                                return(
                                     <div key={photo.name}>
-                                            <img style={{
-                                            'borderRadius': '5px',
-                                            'boxShadow': '10px 10px 10px darkgrey'
-                                            }} width='157px' height='175px' src={photo.url} alt='pictures of Skills'/>
-                                    </div>
-                                )
-                            })}
-                    </Slider><br />
-                    <p>&emsp;Python, Django, NodeJs, Express, Firebase, Restful API's.</p>
-                    <h5>Databases:</h5><br />
-                    <Slider {...settings}>
-                        {db.map((photo) => {
-                            return(
+                                                <img style={{
+                                                    'borderRadius': '5px',
+                                                    'boxShadow': '10px 10px 10px darkgrey'
+                                                }} width='157px' height='175px' src={photo.url} alt='pictures of Skills'/>
+                                        </div>
+                                    )
+                                })}
+                        </Slider><br />
+                        <p>&emsp;MongoDb, PostgresqL, MySQL, JSON, XML.</p>
+                    </div>
+                    <div data-aos="flip-up">
+                        <h5>Testing:</h5><br />
+                        <Slider {...settings}>
+                            {testing.map((photo) => {
+                                return(
                                     <div key={photo.name}>
-                                            <img style={{
-                                            'borderRadius': '5px',
-                                            'boxShadow': '10px 10px 10px darkgrey'
-                                            }} width='157px' height='175px' src={photo.url} alt='pictures of Skills'/>
-                                    </div>
-                                )
-                            })}
-                    </Slider><br />
-                    <p>&emsp;MongoDb, PostgresqL, MySQL, JSON, XML.</p>
-                    <h5>Testing:</h5><br />
-                    <Slider {...settings}>
-                        {testing.map((photo) => {
-                            return(
+                                                <img style={{
+                                                    'borderRadius': '5px',
+                                                    'boxShadow': '10px 10px 10px darkgrey'
+                                                }} width='157px' height='175px' src={photo.url} alt='pictures of Skills'/>
+                                        </div>
+                                    )
+                                })}
+                        </Slider><br />
+                        <p>&emsp;Jest, Enzyme, Mocha, Chai, Supertest.</p>
+                    </div>
+                    <div data-aos="flip-left">
+                        <h5>Deployment:</h5><br />
+                        <Slider {...settings}>
+                            {deployment.map((photo) => {
+                                return(
                                     <div key={photo.name}>
-                                            <img style={{
-                                            'borderRadius': '5px',
-                                            'boxShadow': '10px 10px 10px darkgrey'
-                                            }} width='157px' height='175px' src={photo.url} alt='pictures of Skills'/>
-                                    </div>
-                                )
-                            })}
-                    </Slider><br />
-                    <p>&emsp;Jest, Enzyme, Mocha, Chai, Supertest.</p>
-                    <h5>Deployment:</h5><br />
-                    <Slider {...settings}>
-                        {deployment.map((photo) => {
-                            return(
+                                                <img style={{
+                                                    'borderRadius': '5px',
+                                                    'boxShadow': '10px 10px 10px darkgrey'
+                                                }} width='157px' height='175px' src={photo.url} alt='pictures of Skills'/>
+                                        </div>
+                                    )
+                                })}
+                        </Slider><br />
+                        <p>&emsp;Github Pages, Netlify, Heroku.</p>
+                    </div>
+                    <div data-aos="fade-down">
+                        <h5>Information Technology:</h5><br />
+                        <Slider {...settings}>
+                            {iT.map((photo) => {
+                                return(
                                     <div key={photo.name}>
-                                            <img style={{
-                                            'borderRadius': '5px',
-                                            'boxShadow': '10px 10px 10px darkgrey'
-                                            }} width='157px' height='175px' src={photo.url} alt='pictures of Skills'/>
-                                    </div>
-                                )
-                            })}
-                    </Slider><br />
-                    <p>&emsp;Github Pages, Netlify, Heroku.</p>
-                    <h5>Information Technology:</h5><br />
-                    <Slider {...settings}>
-                        {iT.map((photo) => {
-                            return(
+                                                <img style={{
+                                                    'borderRadius': '5px',
+                                                    'boxShadow': '10px 10px 10px darkgrey'
+                                                }} width='157px' height='175px' src={photo.url} alt='pictures of Skills'/>
+                                        </div>
+                                    )
+                                })}
+                        </Slider><br />
+                        <p>&emsp;TCP/IP, DHCP, ARP, PING, FTP, IPCONFIG, TRACERT, TELNET, DOS, CLI, A+, Net+, MCP, CNA.</p>
+                    </div>
+                    <div data-aos="zoom-in-up">
+                        <h5>Interpersonal:</h5><br />
+                        <Slider {...settings}>
+                            {interpersonal.map((photo) => {
+                                return(
                                     <div key={photo.name}>
-                                            <img style={{
-                                            'borderRadius': '5px',
-                                            'boxShadow': '10px 10px 10px darkgrey'
-                                            }} width='157px' height='175px' src={photo.url} alt='pictures of Skills'/>
-                                    </div>
-                                )
-                            })}
-                    </Slider><br />
-                    <p>&emsp;TCP/IP, DHCP, ARP, PING, FTP, IPCONFIG, TRACERT, TELNET, DOS, CLI, A+, Net+, MCP, CNA.</p>
-                    <h5>Interpersonal:</h5><br />
-                    <Slider {...settings}>
-                        {interpersonal.map((photo) => {
-                            return(
-                                    <div key={photo.name}>
-                                            <img style={{
-                                            'borderRadius': '5px',
-                                            'boxShadow': '10px 10px 10px darkgrey'
-                                            }} width='157px' height='175px' src={photo.url} alt='pictures of Skills'/>
-                                    </div>
-                                )
-                            })}
-                    </Slider><br />
-                    <p>&emsp;Marine Corps Veteran, Attention to detail, Courtesy, Fairness, Time management, Enthusiasm, Endurance.</p>
+                                                <img style={{
+                                                    'borderRadius': '5px',
+                                                    'boxShadow': '10px 10px 10px darkgrey'
+                                                }} width='157px' height='175px' src={photo.url} alt='pictures of Skills'/>
+                                        </div>
+                                    )
+                                })}
+                        </Slider><br />
+                        <p>&emsp;Marine Corps Veteran, Attention to detail, Courtesy, Fairness, Time management, Enthusiasm, Endurance.</p>
+                    </div>
                     <br />
                     </center>
                 </div> 
