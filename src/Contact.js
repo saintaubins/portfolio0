@@ -115,14 +115,14 @@ export class Contact extends Component {
                         'borderImage': 'url(https://webstockreview.net/images/picture-border-png-3.png) 20% round',
                     }}> 
                         <center>
-                            <div style={{wordWrap:'break-word'}}><h2 className='lG'>Contact Me</h2></div><br></br>
-                            <div style={{wordWrap:'break-word'}}><a href="mailto:saintaubins@gmail.com? subject='Lets Connect' " target='_blank' rel="noopener noreferrer" className='lG'>Email: saintaubins@gmail.com</a></div>
+                            <div style={{wordWrap:'break-word', whiteSpace: 'normal'}}><h2 className='lG'>Contact Me</h2></div><br></br>
+                            <div style={{wordWrap:'break-word', whiteSpace: 'normal'}}><a href="mailto:saintaubins@gmail.com? subject='Lets Connect' " target='_blank' rel="noopener noreferrer" className='lG'>Email: saintaubins@gmail.com</a></div>
                             <br></br>
-                            <div style={{wordWrap:'break-word'}}><a href='https://www.linkedin.com/in/sem-saint-aubin/' target='_blank' rel="noopener noreferrer" className='lG'>LinkedIn: https://www.linkedin.com/in/sem-saint-aubin</a></div>
+                            <div style={{wordWrap:'break-word', whiteSpace: 'normal'}}><a href='https://www.linkedin.com/in/sem-saint-aubin/' target='_blank' rel="noopener noreferrer" className='lG'>LinkedIn: https://www.linkedin.com/in/sem-saint-aubin</a></div>
                             <br></br>
-                            <div style={{wordWrap:'break-word'}}><a href='https://github.com/saintaubins' target='_blank' rel="noopener noreferrer" className='lG'>Github: https://github.com/saintaubins</a></div>
+                            <div style={{wordWrap:'break-word', whiteSpace: 'normal'}}><a href='https://github.com/saintaubins' target='_blank' rel="noopener noreferrer" className='lG'>Github: https://github.com/saintaubins</a></div>
                             <br></br>
-                            <div style={{wordWrap:'break-word'}}><p className='lG'>Cell Phone: 516-429-8578</p></div>
+                            <div style={{wordWrap:'break-word', whiteSpace: 'normal'}}><p className='lG'>Cell Phone: 516-429-8578</p></div>
                         </center>
                     </div> 
                     <center>
