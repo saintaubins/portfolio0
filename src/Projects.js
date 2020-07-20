@@ -120,7 +120,7 @@ export const Projects = () => {
                                         </div>
                                     </div>
                                     <br></br>
-                                    <div data-aos="flip-left" className='maincontainer'>
+                                    <div data-aos="zoom-in-up" className='maincontainer'>
                                         <div className='thecard'>
                                             <div className='thefront'>
                                                 <div>
