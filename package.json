@@ -45,13 +45,13 @@
   "devDependencies": {},
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/saintaubins/portfolio2.git"
+    "url": "git+https://github.com/saintaubins/portfolio0.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/saintaubins/portfolio2/issues"
+    "url": "https://github.com/saintaubins/portfolio0/issues"
   },
-  "homepage": "https://github.com/saintaubins/portfolio2#readme"
+  "homepage": "https://github.com/saintaubins/portfolio0#readme"
 }
