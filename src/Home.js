@@ -90,7 +90,7 @@ export const Home = () => {
                     <Jumbo fluid className='nyPark'>
                         <div className='overlay'></div>
                         <center>
-                            <div data-aos="fade-down" className='maincontainer'>
+                            <div data-aos="zoom-in-up" className='maincontainer'>
                                 <div className='thecard'>
                                     <div className='thefront'>
                                         <h2>What Can I offer ?</h2>

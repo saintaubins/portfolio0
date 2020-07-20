@@ -153,7 +153,7 @@ export const Skills = () => {
                 }} >
                     <center>
                     <h4>Skills:</h4><br />
-                    <div data-aos="fade-down">
+                    <div data-aos="zoom-in-up">
                         <h5>Frontend:</h5><br />
                         <Slider {...settings}>
                             {front.map((photo) => {
@@ -201,7 +201,7 @@ export const Skills = () => {
                         </Slider><br />
                         <p>&emsp;MongoDb, PostgresqL, MySQL, JSON, XML.</p>
                     </div>
-                    <div data-aos="flip-up">
+                    <div data-aos="fade-up">
                         <h5>Testing:</h5><br />
                         <Slider {...settings}>
                             {testing.map((photo) => {
@@ -217,7 +217,7 @@ export const Skills = () => {
                         </Slider><br />
                         <p>&emsp;Jest, Enzyme, Mocha, Chai, Supertest.</p>
                     </div>
-                    <div data-aos="flip-left">
+                    <div data-aos="zoom-in-up">
                         <h5>Deployment:</h5><br />
                         <Slider {...settings}>
                             {deployment.map((photo) => {
