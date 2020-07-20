@@ -15,17 +15,17 @@ import './App.css';
 
 export const App = () => {
   const { location } = useContext(__RouterContext);
-  const transitions = useTransition(location, location => location.pathname, {
-      from: { opacity: 0, transform: "translate3d(100%,0,0)" },
-      enter: { opacity: 1, transform: "translate3d(0%,0,0)" },
-      leave: { opacity: 0, transform: "translate3d(-50%,0,0)" }
-  });
+  // const transitions = useTransition(location, location => location.pathname, {
+  //     from: { opacity: 0, transform: "translate3d(100%,0,0)" },
+  //     enter: { opacity: 1, transform: "translate3d(0%,0,0)" },
+  //     leave: { opacity: 0, transform: "translate3d(-50%,0,0)" }
+  // });
     return (
       <React.Fragment>
           <NavigationBar />
           <Jumbotron />
-            {transitions.map(({ item, props, key }) => (
-              <animated.div key={key} style={props}>
+            {/* {transitions.map(({ item, props, key }) => ( */}
+              {/* <animated.div key={key} style={props}> */}
                 <Switch>
                   <Route exact path="/" component={Home} />
                   <Route exact path="/skills" component={Skills} />
@@ -33,8 +33,8 @@ export const App = () => {
                   <Route exact path='/projects'component={Projects} />
                   <Route exact path="/contact" component={Contact} />
                 </Switch>
-              </animated.div>
-            ))}  
+              {/* </animated.div> */}
+            {/* ))}   */}
       </React.Fragment>
     );
 }
