@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React from 'react';
 import { Route, Switch, __RouterContext } from 'react-router-dom';
 import { Home } from './Home';
 import { Skills } from './Skills';
@@ -7,14 +7,14 @@ import { Contact } from './Contact';
 import { Projects } from './Projects';
 import { NavigationBar } from './components/NavigationBar';
 import { Jumbotron } from './components/Jumbotron';
-import { useTransition, animated } from 'react-spring';
+//import { useTransition, animated } from 'react-spring';
 import './App.css';
 
 
 
 
 export const App = () => {
-  const { location } = useContext(__RouterContext);
+  //const { location } = useContext(__RouterContext);
   // const transitions = useTransition(location, location => location.pathname, {
   //     from: { opacity: 0, transform: "translate3d(100%,0,0)" },
   //     enter: { opacity: 1, transform: "translate3d(0%,0,0)" },
