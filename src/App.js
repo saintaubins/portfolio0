@@ -1,5 +1,5 @@
 import React from 'react';
-import { Route, Switch, __RouterContext } from 'react-router-dom';
+import { Route, Switch } from 'react-router-dom';
 import { Home } from './Home';
 import { Skills } from './Skills';
 import { Resume } from './Resume';
