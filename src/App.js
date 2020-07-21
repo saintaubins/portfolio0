@@ -28,20 +28,20 @@ export const App = () => {
     const interval = setInterval(() => {
       const fetchData = async () => {
         const result = await axios(
-          'https://still-river-88047.herokuapp.com/http://portfolio0.herokuapp.com',
+          'https://still-river-88047.herokuapp.com/http://semsaintaubin.com',
         );
         setData(result.data);
         console.log(result.data);
       };
       fetchData();
-    }, (60000*55));
+    }, (6000*1));
     return () => clearInterval(interval);
   }, [])
 
   useEffect(() => {
     const fetchData = async () => {
       const result = await axios(
-        'https://still-river-88047.herokuapp.com/http://portfolio0.herokuapp.com',
+        'https://still-river-88047.herokuapp.com/http://semsaintaubin.com',
       );
       setData(result.data);
       console.log(result.data);
