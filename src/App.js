@@ -45,6 +45,7 @@ export const App = () => {
       );
       setData(result.data);
       console.log(result.data);
+      console.log(data)
     };
     fetchData();
   }, [])
