@@ -26,13 +26,12 @@ export const App = () => {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      //console.log('This will run every 60 seconds!');
       const fetchData = async () => {
-      const result = await axios(
-        'https://still-river-88047.herokuapp.com/http://portfolio0.herokuapp.com',
-      );
-      setData(result.data);
-      console.log(result.data);
+        const result = await axios(
+          'https://still-river-88047.herokuapp.com/http://portfolio0.herokuapp.com',
+        );
+        setData(result.data);
+        console.log(result.data);
       };
       fetchData();
     }, (60000*55));
