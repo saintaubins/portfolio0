@@ -34,7 +34,7 @@ export const App = () => {
         console.log(result.data);
       };
       fetchData();
-    }, (6000*1));
+    }, (60000*55));
     return () => clearInterval(interval);
   }, [])
 
