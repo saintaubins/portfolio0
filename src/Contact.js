@@ -76,24 +76,26 @@ export class Contact extends Component {
         return (
             <React.Fragment>
             <div className='Contact'>
-            {this.state.isSignedIn ? (
-                <center>
-                    <span>
-                        <div>Signed In!</div>
-                        <button onClick={() => firebase.auth().signOut()}>Sign out!</button>
-                        <h1>Welcome {firebase.auth().currentUser.displayName}</h1>
-                        <img
-                        alt="profile"
-                        src={firebase.auth().currentUser.photoURL}
-                        />
-                    </span>
-                </center>
-        ) : (
-          <StyledFirebaseAuth
-            uiConfig={this.uiConfig}
-            firebaseAuth={firebase.auth()}
-          />
-        )}
+                <br />
+                {this.state.isSignedIn ? (
+                    <center>
+                        <br />
+                            <span>
+                                <div>Hello You Are Signed In!</div> <br />
+                                <button onClick={() => firebase.auth().signOut()}>Sign out!</button> <br />
+                                <h1>Welcome {firebase.auth().currentUser.displayName}</h1>
+                                <img alt="profile" style={{'width': '175px'}}
+                                src={firebase.auth().currentUser.photoURL}
+                                /> <br />
+                            </span>
+                        <br />
+                    </center>
+                ) : (
+                <StyledFirebaseAuth
+                    uiConfig={this.uiConfig}
+                    firebaseAuth={firebase.auth()}
+                />
+                )}
             </div>
             
                 <div style={{
