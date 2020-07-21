@@ -27,8 +27,12 @@ export const App = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       const fetchData = async () => {
-        const result = await axios(
-          'https://still-river-88047.herokuapp.com/http://semsaintaubin.com',
+        const result = await axios.get(
+          'https://still-river-88047.herokuapp.com/http://semsaintaubin.com', {
+            headers: {
+              'Test-Header': 'test-value'
+            }
+          }
         );
         setData(result.data);
         console.log(result.data);
@@ -40,8 +44,12 @@ export const App = () => {
 
   useEffect(() => {
     const fetchData = async () => {
-      const result = await axios(
-        'https://still-river-88047.herokuapp.com/http://semsaintaubin.com',
+      const result = await axios.get(
+        'https://still-river-88047.herokuapp.com/http://semsaintaubin.com', {
+          headers: {
+            'Test-Header': 'test-value'
+          }
+        }
       );
       setData(result.data);
       console.log(result.data);
