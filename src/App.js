@@ -28,14 +28,17 @@ export const App = () => {
     const interval = setInterval(() => {
       const fetchData = async () => {
         const result = await axios.get(
-          'https://still-river-88047.herokuapp.com/http://semsaintaubin.com', {
+          'https://still-river-88047.herokuapp.com/semsaintaubin.com', {
             headers: {
               'Test-Header': 'test-value'
             }
           }
-        );
-        setData(result.data);
-        console.log(result.data);
+        ).then(res => {
+          console.log('res.data = ',res.data);
+          setData(res.data);
+          console.log('data.hits = ',data.hits);
+        }).catch(err => console.error(err))
+        console.log('result = ',result)
       };
       fetchData();
     }, (60000*55));
@@ -45,15 +48,17 @@ export const App = () => {
   useEffect(() => {
     const fetchData = async () => {
       const result = await axios.get(
-        'https://still-river-88047.herokuapp.com/http://semsaintaubin.com', {
+        'https://still-river-88047.herokuapp.com/semsaintaubin.com', {
           headers: {
             'Test-Header': 'test-value'
           }
         }
-      );
-      setData(result.data);
-      console.log(result.data);
-      console.log(data)
+      ).then(res => {
+        console.log('res.data = ',res.data);
+        setData(res.data);
+        console.log('data.hits = ',data.hits)
+      }).catch(err => console.error(err))
+      console.log('result = ',result)
     };
     fetchData();
   }, [])
