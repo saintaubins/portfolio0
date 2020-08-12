@@ -36,7 +36,7 @@ export const App = () => {
         ).then(res => {
           console.log('res.data = ',res.data);
           setData(res.data);
-          console.log('data.hits = ',data.hits);
+          console.log('data.hits = ',data.hits)
         }).catch(err => console.error(err))
         console.log('result = ',result)
       };
@@ -72,7 +72,7 @@ export const App = () => {
                 <Switch>
                   <Route exact path="/" component={Home} />
                   <Route exact path="/skills" component={Skills} />
-                  <Route exact path="/resume" component={Resume} />
+                  {/* <Route exact path="/resume" component={Resume} /> */}
                   <Route exact path='/projects'component={Projects} />
                   <Route exact path="/contact" component={Contact} />
                 </Switch>

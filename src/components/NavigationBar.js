@@ -33,9 +33,9 @@ export const NavigationBar = () => (
                     <Nav.Item>
                             <Link to='/skills'>Skills</Link>
                     </Nav.Item>
-                    <Nav.Item>
+                    {/* <Nav.Item>
                             <Link to='/resume'>Resume</Link>
-                    </Nav.Item>
+                    </Nav.Item> */}
                     <Nav.Item>
                             <Link to='/projects'>Projects</Link>
                     </Nav.Item>
