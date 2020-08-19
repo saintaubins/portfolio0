@@ -6,6 +6,7 @@ import cardGame from '../src/assets/cardGame.png';
 import memGame from '../src/assets/memGame.png';
 import jobSearch from '../src/assets/jobSearch.png';
 import docOffice from '../src/assets/docOffice.png';
+import travel from '../src/assets/travel.png';
 import todo from '../src/assets/Todo.png';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
@@ -111,6 +112,32 @@ export const Projects = () => {
                                                         <p>Click here to see the project</p>
                                                     </a>
                                                     <a href='https://github.com/saintaubins/MemoryGame' 
+                                                        target='_blank' rel='noopener noreferrer'
+                                                        style={{'textDecoration': 'none', 'color': 'white'}}>
+                                                        <p>Click here to see the Code</p>
+                                                    </a>
+                                                </div> 
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <br></br>
+                                    <br></br>
+                                    <div data-aos="fade-down" className='maincontainer'>
+                                        <div className='thecard'>
+                                            <div className='thefront'>
+                                                <div>
+                                                    <h3> Travel App. </h3>
+                                                    <img src={travel} alt='img of game' style={{'width':'100%', 'borderRadius':'7px', 'boxShadow':'7px 7px 7px black'}}></img> 
+                                                </div> 
+                                            </div>
+                                            <div className='theback'>
+                                                <div><p>A Travel App, Called Sem's travel  with Python, Django, HTML5.</p>
+                                                    <a href='https://travel-app-ss.herokuapp.com/'
+                                                        target='_blank' rel="noopener noreferrer" 
+                                                        style={{'textDecoration': 'none', 'color': 'white'}}>
+                                                        <p>Click here to see the project</p>
+                                                    </a>
+                                                    <a href='https://github.com/saintaubins/django_travel' 
                                                         target='_blank' rel='noopener noreferrer'
                                                         style={{'textDecoration': 'none', 'color': 'white'}}>
                                                         <p>Click here to see the Code</p>
