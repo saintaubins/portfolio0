@@ -8,6 +8,7 @@ import jobSearch from '../src/assets/jobSearch.png';
 import docOffice from '../src/assets/docOffice.png';
 import travel from '../src/assets/travel.png';
 import todo from '../src/assets/Todo.png';
+import weather from '../src/assets/weather.png';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 //import { useTransition, animated } from 'react-spring';
@@ -131,13 +132,39 @@ export const Projects = () => {
                                                 </div> 
                                             </div>
                                             <div className='theback'>
-                                                <div><p>A Travel App, Called Sem's travel  with Python, Django, HTML5.</p>
+                                                <div><p>A Travel App, Called Sem's travel  with Python, Django, HTML5, CSS.</p>
                                                     <a href='https://travel-app-ss.herokuapp.com/'
                                                         target='_blank' rel="noopener noreferrer" 
                                                         style={{'textDecoration': 'none', 'color': 'white'}}>
                                                         <p>Click here to see the project</p>
                                                     </a>
                                                     <a href='https://github.com/saintaubins/django_travel' 
+                                                        target='_blank' rel='noopener noreferrer'
+                                                        style={{'textDecoration': 'none', 'color': 'white'}}>
+                                                        <p>Click here to see the Code</p>
+                                                    </a>
+                                                </div> 
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <br></br>
+                                    <br></br>
+                                    <div data-aos="fade-down" className='maincontainer'>
+                                        <div className='thecard'>
+                                            <div className='thefront'>
+                                                <div>
+                                                    <h3> Weather App. </h3>
+                                                    <img src={weather} alt='img of game' style={{'width':'100%', 'borderRadius':'7px', 'boxShadow':'7px 7px 7px black'}}></img> 
+                                                </div> 
+                                            </div>
+                                            <div className='theback'>
+                                                <div><p>A Weather App, Called The Weather  with Python, Django, HTML5, CSS.</p>
+                                                    <a href='http://saintaubins.pythonanywhere.com/'
+                                                        target='_blank' rel="noopener noreferrer" 
+                                                        style={{'textDecoration': 'none', 'color': 'white'}}>
+                                                        <p>Click here to see the project</p>
+                                                    </a>
+                                                    <a href='https://github.com/saintaubins/django_weather' 
                                                         target='_blank' rel='noopener noreferrer'
                                                         style={{'textDecoration': 'none', 'color': 'white'}}>
                                                         <p>Click here to see the Code</p>
