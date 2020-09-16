@@ -9,6 +9,7 @@ import docOffice from '../src/assets/docOffice.png';
 import travel from '../src/assets/travel.png';
 import todo from '../src/assets/Todo.png';
 import weather from '../src/assets/weather.png';
+import chat from '../src/assets/chat.png';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 //import { useTransition, animated } from 'react-spring';
@@ -165,6 +166,32 @@ export const Projects = () => {
                                                         <p>Click here to see the project</p>
                                                     </a>
                                                     <a href='https://github.com/saintaubins/django_weather' 
+                                                        target='_blank' rel='noopener noreferrer'
+                                                        style={{'textDecoration': 'none', 'color': 'white'}}>
+                                                        <p>Click here to see the Code</p>
+                                                    </a>
+                                                </div> 
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <br></br>
+                                    <br></br>
+                                    <div data-aos="zoom-in-up" className='maincontainer'>
+                                        <div className='thecard'>
+                                            <div className='thefront'>
+                                                <div>
+                                                    <h3> Chat App. </h3>
+                                                    <img src={chat} alt='img of game' style={{'width':'100%', 'borderRadius':'7px', 'boxShadow':'7px 7px 7px black'}}></img> 
+                                                </div> 
+                                            </div>
+                                            <div className='theback'>
+                                                <div><p>A Chat App, Called My Chat with Node, Socket.io, React, Bootstrap.</p>
+                                                    <a href='https://sharp-swirles-7b70ab.netlify.app/'
+                                                        target='_blank' rel="noopener noreferrer" 
+                                                        style={{'textDecoration': 'none', 'color': 'white'}}>
+                                                        <p>Click here to see the project</p>
+                                                    </a>
+                                                    <a href='https://github.com/saintaubins/react_chat_app' 
                                                         target='_blank' rel='noopener noreferrer'
                                                         style={{'textDecoration': 'none', 'color': 'white'}}>
                                                         <p>Click here to see the Code</p>
