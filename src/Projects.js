@@ -27,17 +27,19 @@ const Styles = styled.div`
         opacity: 0.8;
        
     }
-    // .grid-container {
-    //     display: grid;
-    //     grid-template-columns: auto auto auto;
-    // }
-    // .grid-item {
-    //     background-color: rgba(255, 255, 255, 0.8);
-    // }
+    .grid-container {
+        display: inline-grid;
+        //grid-gap: 50px;
+        grid-template-columns: auto auto auto;
+    }
+    .grid-item {
+        // background-color: rgba(255, 255, 255, 0.8);
+    }
     .maincontainer {
         position: relative;
         width: 250px;
         height: 310px;
+        margin: 2rem;
         // width: 100%;
         // height: 100%;
 
@@ -100,11 +102,12 @@ export const Projects = () => {
                         'margin':'0', 
                     }}> */}
                         <Styles>
+                            
                             <Jumbo fluid className='projects'>
-                            <div className='overlay'></div>
-                            <br></br>
+                            {/* <div className='overlay'></div> */}
+                            {/* <br></br> */}
                                 <center>
-                                <br></br>
+                                {/* <br></br> */}
                                 <div className = "grid-container">
                                 <div className = "grid-item">
                                     <div data-aos="fade-down" className='maincontainer'>
@@ -127,9 +130,9 @@ export const Projects = () => {
                                         </div>
                                     </div>
                                     </div>
-                                    <br></br>
-                                    <br></br>
-                                    <div className = "grid-item">
+                                    {/* <br></br>
+                                    <br></br> */}
+                                    <div className= "grid-item">
                                     <div data-aos="fade-down" className='maincontainer'>
                                         <div className='thecard'>
                                             <div className='thefront'>
@@ -155,9 +158,9 @@ export const Projects = () => {
                                         </div>
                                     </div>
                                     </div>
-                                    <br></br>
-                                    <br></br>
-                                    <div className = "grid-item">
+                                    {/* <br></br>
+                                    <br></br> */}
+                                    <div className= "grid-item">
                                     <div data-aos="fade-down" className='maincontainer'>
                                         <div className='thecard'>
                                             <div className='thefront'>
@@ -183,10 +186,10 @@ export const Projects = () => {
                                         </div>
                                     </div>
                                     </div>
-                                    <br></br>
-                                    <br></br>
-                                    <div className = "grid-item">
-                                    <div data-aos="fade-down" className='maincontainer'>
+                                    {/* <br></br>
+                                    <br></br> */}
+                                    <div className= "grid-item">
+                                    <div data-aos="zoom-in-up" className='maincontainer'>
                                         <div className='thecard'>
                                             <div className='thefront'>
                                                 <div>
@@ -211,9 +214,9 @@ export const Projects = () => {
                                         </div>
                                     </div>
                                     </div>
-                                    <br></br>
-                                    <br></br>
-                                    <div className = "grid-item">
+                                    {/* <br></br>
+                                    <br></br> */}
+                                    <div className= "grid-item">
                                     <div data-aos="zoom-in-up" className='maincontainer'>
                                         <div className='thecard'>
                                             <div className='thefront'>
@@ -239,8 +242,9 @@ export const Projects = () => {
                                         </div>
                                     </div>
                                     </div>
-                                    <br></br>
-                                    <div className = "grid-item">
+                                    {/* <br></br>
+                                    <br></br> */}
+                                    <div className= "grid-item">
                                     <div data-aos="zoom-in-up" className='maincontainer'>
                                         <div className='thecard'>
                                             <div className='thefront'>
@@ -267,9 +271,10 @@ export const Projects = () => {
                                         </div>
                                     </div>
                                     </div>
-                                    <br></br>
-                                    <div className = "grid-item">
-                                    <div data-aos="fade-up"className='maincontainer'>
+                                    {/* <br></br>
+                                    <br></br> */}
+                                    <div className= "grid-item">
+                                    <div data-aos="zoom-in-down"className='maincontainer'>
                                         <div  className='thecard'>
                                             <div className='thefront'>
                                                 <div>
@@ -295,9 +300,10 @@ export const Projects = () => {
                                         </div>
                                     </div>
                                     </div>
-                                    <br></br>
-                                    <div className = "grid-item">
-                                    <div data-aos="fade-right" className='maincontainer'>
+                                    {/* <br></br>
+                                    <br></br> */}
+                                    <div className= "grid-item">
+                                    <div data-aos="zoom-in-down" className='maincontainer'>
                                             <div className='thecard'>
                                                 <div className='thefront'>
                                                     <div>
@@ -323,9 +329,10 @@ export const Projects = () => {
                                             </div>
                                         </div>
                                         </div>
-                                    <br></br>
-                                    <div className = "grid-item">
-                                    <div data-aos="fade-left" className='maincontainer'>
+                                    {/* <br></br>
+                                    <br></br> */}
+                                    <div className= "grid-item">
+                                    <div data-aos="zoom-in-down" className='maincontainer'>
                                         <div className='thecard'>
                                             <div className='thefront'>
                                                 <div>
@@ -355,6 +362,7 @@ export const Projects = () => {
                                 
                                 </center>
                             </Jumbo>
+                            
                         </Styles>
                     {/* </div>  */}
                 </div>
