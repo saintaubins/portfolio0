@@ -4,6 +4,7 @@ import styled from 'styled-components';
 //import { Route, Switch, __RouterContext } from 'react-router-dom';
 import cardGame from '../src/assets/cardGame.png';
 import memGame from '../src/assets/memGame.png';
+import portfolio from '../src/assets/portfolio.png';
 import jobSearch from '../src/assets/jobSearch.png';
 import docOffice from '../src/assets/docOffice.png';
 import travel from '../src/assets/travel.png';
@@ -96,7 +97,27 @@ export const Projects = () => {
                             <div className='overlay'></div>
                             <br></br>
                                 <center>
-                                    
+                                <br></br>
+                                    <div data-aos="fade-down" className='maincontainer'>
+                                        <div className='thecard'>
+                                            <div className='thefront'>
+                                                <div>
+                                                    <h3> My Portfolio. </h3>
+                                                    <img src={portfolio} alt='img of portfolio' style={{'width':'100%', 'borderRadius':'7px', 'boxShadow':'7px 7px 7px black'}}></img> 
+                                                </div> 
+                                            </div>
+                                            <div className='theback'>
+                                                <div><p>My Portfolio, Built with React, and CSS3.</p>
+                                                    <a href='https://github.com/saintaubins/portfolio0' 
+                                                        target='_blank' rel='noopener noreferrer'
+                                                        style={{'textDecoration': 'none', 'color': 'white'}}>
+                                                        <p>Click here to see the Code</p>
+                                                    </a>
+                                                </div> 
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <br></br>
                                     <br></br>
                                     <div data-aos="fade-down" className='maincontainer'>
                                         <div className='thecard'>
