@@ -27,10 +27,20 @@ const Styles = styled.div`
         opacity: 0.8;
        
     }
+    // .grid-container {
+    //     display: grid;
+    //     grid-template-columns: auto auto auto;
+    // }
+    // .grid-item {
+    //     background-color: rgba(255, 255, 255, 0.8);
+    // }
     .maincontainer {
         position: relative;
         width: 250px;
         height: 310px;
+        // width: 100%;
+        // height: 100%;
+
     }
     .thecard {
         position: absolute;
@@ -38,14 +48,11 @@ const Styles = styled.div`
         height: 100%;
         transform-style: preserve-3d;
         transition: all 2.3s ease;
+
     }
     .thecard:hover, .thecard:active {
         transform: rotateX(180deg);
     }
-    // .thecard clicked {
-    //     //transform: rotateX(180deg);
-    //     color: red;
-    // }
     .thefront {
         position: absolute;
         width: 100%;
@@ -98,6 +105,8 @@ export const Projects = () => {
                             <br></br>
                                 <center>
                                 <br></br>
+                                <div className = "grid-container">
+                                <div className = "grid-item">
                                     <div data-aos="fade-down" className='maincontainer'>
                                         <div className='thecard'>
                                             <div className='thefront'>
@@ -117,8 +126,10 @@ export const Projects = () => {
                                             </div>
                                         </div>
                                     </div>
+                                    </div>
                                     <br></br>
                                     <br></br>
+                                    <div className = "grid-item">
                                     <div data-aos="fade-down" className='maincontainer'>
                                         <div className='thecard'>
                                             <div className='thefront'>
@@ -143,8 +154,10 @@ export const Projects = () => {
                                             </div>
                                         </div>
                                     </div>
+                                    </div>
                                     <br></br>
                                     <br></br>
+                                    <div className = "grid-item">
                                     <div data-aos="fade-down" className='maincontainer'>
                                         <div className='thecard'>
                                             <div className='thefront'>
@@ -169,8 +182,10 @@ export const Projects = () => {
                                             </div>
                                         </div>
                                     </div>
+                                    </div>
                                     <br></br>
                                     <br></br>
+                                    <div className = "grid-item">
                                     <div data-aos="fade-down" className='maincontainer'>
                                         <div className='thecard'>
                                             <div className='thefront'>
@@ -195,8 +210,10 @@ export const Projects = () => {
                                             </div>
                                         </div>
                                     </div>
+                                    </div>
                                     <br></br>
                                     <br></br>
+                                    <div className = "grid-item">
                                     <div data-aos="zoom-in-up" className='maincontainer'>
                                         <div className='thecard'>
                                             <div className='thefront'>
@@ -221,7 +238,9 @@ export const Projects = () => {
                                             </div>
                                         </div>
                                     </div>
+                                    </div>
                                     <br></br>
+                                    <div className = "grid-item">
                                     <div data-aos="zoom-in-up" className='maincontainer'>
                                         <div className='thecard'>
                                             <div className='thefront'>
@@ -247,7 +266,9 @@ export const Projects = () => {
                                             </div>
                                         </div>
                                     </div>
+                                    </div>
                                     <br></br>
+                                    <div className = "grid-item">
                                     <div data-aos="fade-up"className='maincontainer'>
                                         <div  className='thecard'>
                                             <div className='thefront'>
@@ -273,7 +294,9 @@ export const Projects = () => {
                                             </div>
                                         </div>
                                     </div>
+                                    </div>
                                     <br></br>
+                                    <div className = "grid-item">
                                     <div data-aos="fade-right" className='maincontainer'>
                                             <div className='thecard'>
                                                 <div className='thefront'>
@@ -299,7 +322,9 @@ export const Projects = () => {
                                                 </div>
                                             </div>
                                         </div>
+                                        </div>
                                     <br></br>
+                                    <div className = "grid-item">
                                     <div data-aos="fade-left" className='maincontainer'>
                                         <div className='thecard'>
                                             <div className='thefront'>
@@ -325,6 +350,9 @@ export const Projects = () => {
                                             </div>
                                         </div>
                                     </div>
+                                </div>
+                                </div>
+                                
                                 </center>
                             </Jumbo>
                         </Styles>
