@@ -10,6 +10,7 @@ import docOffice from '../src/assets/docOffice.png';
 import travel from '../src/assets/travel.png';
 import todo from '../src/assets/Todo.png';
 import weather from '../src/assets/weather.png';
+import bug from '../src/assets/bug.png';
 import chat from '../src/assets/chat.png';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
@@ -165,18 +166,18 @@ export const Projects = () => {
                                         <div className='thecard'>
                                             <div className='thefront'>
                                                 <div>
-                                                    <h3> Travel App. </h3>
-                                                    <img src={travel} alt='img of game' style={{'width':'100%', 'borderRadius':'7px', 'boxShadow':'7px 7px 7px black'}}></img> 
+                                                    <h3> Bug Tracker. </h3>
+                                                    <img src={bug} alt='img of game' style={{'width':'100%', 'borderRadius':'7px', 'boxShadow':'7px 7px 7px black'}}></img> 
                                                 </div> 
                                             </div>
                                             <div className='theback'>
-                                                <div><p>A Travel App, Called Sem's travel  with Python, Django, HTML5, CSS.</p>
-                                                    <a href='https://travel-app-ss.herokuapp.com/'
+                                                <div><p>A Bug Tracking App, with Python, Django, React, CSS.</p>
+                                                    <a href='https://evening-atoll-03641.herokuapp.com/'
                                                         target='_blank' rel="noopener noreferrer" 
                                                         style={{'textDecoration': 'none', 'color': 'white'}}>
                                                         <p>Click here to see the project</p>
                                                     </a>
-                                                    <a href='https://github.com/saintaubins/django_travel' 
+                                                    <a href='https://github.com/saintaubins/react-django-to-do-app' 
                                                         target='_blank' rel='noopener noreferrer'
                                                         style={{'textDecoration': 'none', 'color': 'white'}}>
                                                         <p>Click here to see the Code</p>
@@ -358,7 +359,34 @@ export const Projects = () => {
                                         </div>
                                     </div>
                                 </div>
+                                <div className= "grid-item">
+                                    <div data-aos="fade-down" className='maincontainer'>
+                                        <div className='thecard'>
+                                            <div className='thefront'>
+                                                <div>
+                                                    <h3> Travel App. </h3>
+                                                    <img src={travel} alt='img of game' style={{'width':'100%', 'borderRadius':'7px', 'boxShadow':'7px 7px 7px black'}}></img> 
+                                                </div> 
+                                            </div>
+                                            <div className='theback'>
+                                                <div><p>A Travel App, Called Sem's travel  with Python, Django, HTML5, CSS.</p>
+                                                    <a href='https://travel-app-ss.herokuapp.com/'
+                                                        target='_blank' rel="noopener noreferrer" 
+                                                        style={{'textDecoration': 'none', 'color': 'white'}}>
+                                                        <p>Click here to see the project</p>
+                                                    </a>
+                                                    <a href='https://github.com/saintaubins/django_travel' 
+                                                        target='_blank' rel='noopener noreferrer'
+                                                        style={{'textDecoration': 'none', 'color': 'white'}}>
+                                                        <p>Click here to see the Code</p>
+                                                    </a>
+                                                </div> 
+                                            </div>
+                                        </div>
+                                    </div>
+                                    </div>
                                 </div>
+
                                 
                                 </center>
                             </Jumbo>
