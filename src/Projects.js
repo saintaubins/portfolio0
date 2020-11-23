@@ -12,6 +12,8 @@ import todo from '../src/assets/Todo.png';
 import weather from '../src/assets/weather.png';
 import bug from '../src/assets/bug.png';
 import chat from '../src/assets/chat.png';
+import flaskCrud from '../src/assets/flaskCrud.png';
+import flaskFeedback from '../src/assets/flaskFeedback.png';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 //import { useTransition, animated } from 'react-spring';
@@ -385,7 +387,62 @@ export const Projects = () => {
                                         </div>
                                     </div>
                                     </div>
-                                </div>
+                                
+                                <div className= "grid-item">
+                                    <div data-aos="fade-down" className='maincontainer'>
+                                        <div className='thecard'>
+                                            <div className='thefront'>
+                                                <div>
+                                                    <h3> Flask Survey API. </h3>
+                                                    <img src={flaskFeedback} alt='img of game' style={{'width':'100%', 'borderRadius':'7px', 'boxShadow':'7px 7px 7px black'}}></img> 
+                                                </div> 
+                                            </div>
+                                            <div className='theback'>
+                                                <div><p>A Flask, feedback API, with Python, Email, HTML5.</p>
+                                                    <a href='https://porschefeedback.herokuapp.com/'
+                                                        target='_blank' rel="noopener noreferrer" 
+                                                        style={{'textDecoration': 'none', 'color': 'white'}}>
+                                                        <p>Click here to see the project</p>
+                                                    </a>
+                                                    <a href='https://github.com/saintaubins/flask_feedback_app' 
+                                                        target='_blank' rel='noopener noreferrer'
+                                                        style={{'textDecoration': 'none', 'color': 'white'}}>
+                                                        <p>Click here to see the Code</p>
+                                                    </a>
+                                                </div> 
+                                            </div>
+                                        </div>
+                                    </div>
+                                    </div>
+
+                                    <div className= "grid-item">
+                                    <div data-aos="fade-down" className='maincontainer'>
+                                        <div className='thecard'>
+                                            <div className='thefront'>
+                                                <div>
+                                                    <h3> Flask Crud API. </h3>
+                                                    <img src={flaskCrud} alt='img of game' style={{'width':'100%', 'borderRadius':'7px', 'boxShadow':'7px 7px 7px black'}}></img> 
+                                                </div> 
+                                            </div>
+                                            <div className='theback'>
+                                                <div><p>A Flask Sql Crud, with Python, postgres, HTML5.</p>
+                                                    <a href='https://flask-sql-crud.herokuapp.com/'
+                                                        target='_blank' rel="noopener noreferrer" 
+                                                        style={{'textDecoration': 'none', 'color': 'white'}}>
+                                                        <p>Click here to see the project</p>
+                                                    </a>
+                                                    <a href='https://github.com/saintaubins/flask-crud-app' 
+                                                        target='_blank' rel='noopener noreferrer'
+                                                        style={{'textDecoration': 'none', 'color': 'white'}}>
+                                                        <p>Click here to see the Code</p>
+                                                    </a>
+                                                </div> 
+                                            </div>
+                                        </div>
+                                    </div>
+                                    </div>
+                                
+                                    </div>
 
                                 
                                 </center>
