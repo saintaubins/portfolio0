@@ -32,8 +32,22 @@ const Styles = styled.div`
     }
     .grid-container {
         display: inline-grid;
-        //grid-gap: 50px;
         grid-template-columns: auto auto auto;
+    }
+    @media screen and (max-width:800px) {
+        .grid-container {
+            display: inline-grid;
+            grid-template-columns: auto auto;
+        }
+    }
+    @media screen and (max-width:600px) {
+        .grid-container {
+            display: inline-grid;
+            grid-template-columns: auto;
+        }
+        .maincontainer {
+            width: 190px;
+        }
     }
     .grid-item {
         // background-color: rgba(255, 255, 255, 0.8);
