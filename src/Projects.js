@@ -32,15 +32,21 @@ const Styles = styled.div`
     }
     .grid-container {
         display: inline-grid;
-        grid-template-columns: auto auto auto;
+        grid-template-columns: auto auto auto auto;
     }
-    @media screen and (max-width:800px) {
+    @media screen and (max-width:1395px) {
+        .grid-container {
+            display: inline-grid;
+            grid-template-columns: auto auto auto;
+        }
+    }
+    @media screen and (max-width:1050px) {
         .grid-container {
             display: inline-grid;
             grid-template-columns: auto auto;
         }
     }
-    @media screen and (max-width:600px) {
+    @media screen and (max-width:700px) {
         .grid-container {
             display: inline-grid;
             grid-template-columns: auto;
