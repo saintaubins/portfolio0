@@ -123,7 +123,7 @@ export const Home = () => {
                             <div data-aos="fade-right" className='maincontainer'>
                                 <div className='thecard'>
                                     <div className='thefront'>
-                                        <h2 style={{'font-size':'2.2vw'}}>Flip This card to See a list of My Skills !</h2>
+                                        <h2>See a list of My Skills !</h2>
                                     </div>
                                         <div className='theback'>
                                         <FontAwesomeIcon icon={faHtml5} size='2x' />
