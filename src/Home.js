@@ -54,7 +54,7 @@ const Styles = styled.div`
         border-radius: 10px;
         color: white;
         box-shadow: 7px 7px 7px rgba(0,0,0,0.8);
-        padding: 1%; 
+        //padding: 1%; 
         border: 4vh solid transparent;
         border-image: url(https://www.freepnglogos.com/uploads/border-png/double-line-border-png-10.png) 20% round;
     }
@@ -123,16 +123,16 @@ export const Home = () => {
                             <div data-aos="fade-right" className='maincontainer'>
                                 <div className='thecard'>
                                     <div className='thefront'>
-                                        <h2>Flip This card to See a list of My Skills !</h2>
+                                        <h2 style={{'font-size':'2.2vw'}}>Flip This card to See a list of My Skills !</h2>
                                     </div>
                                         <div className='theback'>
-                                        <FontAwesomeIcon icon={faHtml5} size='3x' />
-                                        <FontAwesomeIcon icon={faCss3} size='3x' />
-                                        <FontAwesomeIcon icon={faReact} size='3x' />
-                                        <FontAwesomeIcon icon={faGithub} size='3x' />
-                                        <FontAwesomeIcon icon={faPython} size='3x' />
-                                        <FontAwesomeIcon icon={faNodeJs} size='3x' />
-                                        <FontAwesomeIcon icon={faJava} size='3x' />
+                                        <FontAwesomeIcon icon={faHtml5} size='2x' />
+                                        <FontAwesomeIcon icon={faCss3} size='2x' />
+                                        <FontAwesomeIcon icon={faReact} size='2x' />
+                                        <FontAwesomeIcon icon={faGithub} size='2x' />
+                                        <FontAwesomeIcon icon={faPython} size='2x' />
+                                        <FontAwesomeIcon icon={faNodeJs} size='2x' />
+                                        <FontAwesomeIcon icon={faJava} size='2x' />
                                         <p>Please Also Visit the Skills Link Above to see more of my skills !</p>
                                     </div>
                                 </div>

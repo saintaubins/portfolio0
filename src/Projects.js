@@ -82,7 +82,7 @@ const Styles = styled.div`
         border-radius: 7px;
         color: white;
         box-shadow: 7px 7px 7px rgba(0,0,0,0.8);
-        padding: 1%; 
+        // padding: 1%; 
         border: 4vh solid transparent;
         border-image: url(https://www.freepnglogos.com/uploads/border-png/double-line-border-png-10.png) 20% round;
     }
