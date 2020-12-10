@@ -31,7 +31,7 @@ const Styles = styled.div`
     .maincontainer {
         position: relative;
         width: 250px;
-        height: 320px;
+        height: 350px;
        
 
     }
@@ -133,8 +133,6 @@ export const Home = () => {
                                         <FontAwesomeIcon icon={faPython} size='3x' />
                                         <FontAwesomeIcon icon={faNodeJs} size='3x' />
                                         <FontAwesomeIcon icon={faJava} size='3x' />
-                                        {/* <FontAwesomeIcon icon={faHeroku} size='3x' /> */}
-                                        {/* <FontAwesomeIcon icon={faMocha} size='3x' /> */}
                                         <p>Please Also Visit the Skills Link Above to see more of my skills !</p>
                                     </div>
                                 </div>

@@ -55,16 +55,11 @@ const Styles = styled.div`
             width: 190px;
         }
     }
-    .grid-item {
-        // background-color: rgba(255, 255, 255, 0.8);
-    }
     .maincontainer {
         position: relative;
         width: 250px;
-        height: 310px;
+        height: 350px;
         margin: 2rem;
-        // width: 100%;
-        // height: 100%;
 
     }
     .thecard {
