@@ -5,35 +5,35 @@ import StyledFirebaseAuth from 'react-firebaseui/StyledFirebaseAuth';
 
 //Got help from here => https://www.youtube.com/watch?v=zq0TuNqV0Ew
 
-firebase.initializeApp({
-                apiKey: 'AIzaSyDoONIIx7e6-FtYEK2DfzAvEtDifAb6KFM',
-                authDomain: 'portfolio0-auth.firebaseapp.com'
-            })
+// firebase.initializeApp({
+//                 apiKey: 'AIzaSyDoONIIx7e6-FtYEK2DfzAvEtDifAb6KFM',
+//                 authDomain: 'portfolio0-auth.firebaseapp.com'
+//             })
 export class Contact extends Component {
     
-        state = {
-             isSignedIn: false 
-        };
-        uiConfig = {
-            signInFlow: 'popup',
-            signInOptions: [
-                firebase.auth.GoogleAuthProvider.PROVIDER_ID,
-                firebase.auth.FacebookAuthProvider.PROVIDER_ID,
-                firebase.auth.TwitterAuthProvider.PROVIDER_ID,
-                firebase.auth.GithubAuthProvider.PROVIDER_ID,
-                firebase.auth.EmailAuthProvider.PROVIDER_ID
-            ],
-            callbacks: {
-                signInSuccessWithAuthResult: () => false
-            }
-        }
-        componentDidMount = () => {
+        // state = {
+        //      isSignedIn: false 
+        // };
+        // uiConfig = {
+        //     signInFlow: 'popup',
+        //     signInOptions: [
+        //         firebase.auth.GoogleAuthProvider.PROVIDER_ID,
+        //         firebase.auth.FacebookAuthProvider.PROVIDER_ID,
+        //         firebase.auth.TwitterAuthProvider.PROVIDER_ID,
+        //         firebase.auth.GithubAuthProvider.PROVIDER_ID,
+        //         firebase.auth.EmailAuthProvider.PROVIDER_ID
+        //     ],
+        //     callbacks: {
+        //         signInSuccessWithAuthResult: () => false
+        //     }
+        // }
+        // componentDidMount = () => {
             
-            firebase.auth().onAuthStateChanged(user => {
-                this.setState({isSignedIn: user})
-                console.log('user', user)
-            })
-        }
+        //     firebase.auth().onAuthStateChanged(user => {
+        //         this.setState({isSignedIn: user})
+        //         console.log('user', user)
+        //     })
+        // }
         
     
     render() {
@@ -76,8 +76,8 @@ export class Contact extends Component {
         return (
             <React.Fragment>
             <div className='Contact'>
-                <br />
-                {this.state.isSignedIn ? (
+              
+                {/* {this.state.isSignedIn ? (
                     <center>
                         <br />
                             <span>
@@ -95,7 +95,7 @@ export class Contact extends Component {
                     uiConfig={this.uiConfig}
                     firebaseAuth={firebase.auth()}
                 />
-                )}
+                )} */}
             </div>
             
                 <div style={{

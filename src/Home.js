@@ -27,6 +27,8 @@ const Styles = styled.div`
         border-radius: 7px;
         box-shadow: 10px 10px 10px 10px black;
         opacity: 0.8;
+        //z-index: -1;
+        //position: sticky;
     }
     .maincontainer {
         position: relative;
@@ -93,10 +95,10 @@ export const Home = () => {
                             <div data-aos="zoom-in-up" className='maincontainer'>
                                 <div className='thecard'>
                                     <div className='thefront'>
-                                        <h2>What Can I offer ?</h2>
+                                        <h2>What front-end technology can I offer?</h2>
                                     </div>
                                     <div className='theback'>
-                                        <h2 className='lG'>Front End Service !</h2>
+                                        <h2 className='lG'>HTML, CSS, Javascript, Bootstrap!</h2>
                                         <img style={{
                                             'width': '100%',
                                             'borderRadius': '7px'
@@ -108,10 +110,10 @@ export const Home = () => {
                             <div data-aos="fade-up" className='maincontainer'>
                                 <div className='thecard'>
                                     <div className='thefront'>
-                                        <h2>What else Can I offer ?</h2>
+                                        <h2>What back-end technology can I offer?</h2>
                                     </div>
                                     <div className='theback'>
-                                        <h2>Back End Service !</h2>
+                                        <h2 className="lG">Python, Django, Flask, SQL!</h2>
                                         <img style={{
                                             'width': '100%',
                                             'borderRadius': '7px'
@@ -123,7 +125,7 @@ export const Home = () => {
                             <div data-aos="fade-right" className='maincontainer'>
                                 <div className='thecard'>
                                     <div className='thefront'>
-                                        <h2>See a list of My Skills !</h2>
+                                        <h2 className="lG">See a list of My Skills !</h2>
                                     </div>
                                         <div className='theback'>
                                         <FontAwesomeIcon icon={faHtml5} size='2x' />

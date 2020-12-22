@@ -4,12 +4,17 @@ import { Home } from './Home';
 import { Skills } from './Skills';
 import { Resume } from './Resume';
 import { Contact } from './Contact';
+
 import { Projects } from './Projects';
 import { NavigationBar } from './components/NavigationBar';
 import { Jumbotron } from './components/Jumbotron';
-//import { useTransition, animated } from 'react-spring';
 import './App.css';
 import axios from 'axios';
+import Chatbot from 'react-chatbot-kit';
+
+import config from "./chatbot/config";
+import MessageParser from "./chatbot/MessageParser";
+import ActionProvider from "./chatbot/ActionProvider";
 
 
 
@@ -56,9 +61,7 @@ export const App = () => {
       ).then(res => {
         console.log('res.data = ',res.data);
         setData(res.data);
-        console.log('data.hits = ',data.hits)
       }).catch(err => console.error(err))
-      console.log('result = ',result)
     };
     fetchData();
   }, [])
@@ -67,18 +70,20 @@ export const App = () => {
       <React.Fragment>
           <NavigationBar />
           <Jumbotron />
-            {/* {transitions.map(({ item, props, key }) => ( */}
-              {/* <animated.div key={key} style={props}> */}
-                <Switch>
-                  <Route exact path="/" component={Home} />
-                  <Route exact path="/skills" component={Skills} />
-                  <Route exact path="/resume" component={Resume} />
-                  <Route exact path='/projects'component={Projects} />
-                  <Route exact path="/contact" component={Contact} />
-                </Switch>
-              {/* </animated.div> */}
-            {/* ))}   */}
+            <Switch>
+              <Route exact path="/" component={Home} />
+              <Route exact path="/skills" component={Skills} />
+              <Route exact path="/resume" component={Resume} />
+              <Route exact path='/projects'component={Projects} />
+              <Route exact path="/contact" component={Contact} />
+            </Switch>
+            <div className="chatbot">
+              <Chatbot config={config} messageParser={MessageParser} actionProvider={ActionProvider} />
+            </div>
       </React.Fragment>
+      
+       
+      
     );
 }
 export default App;

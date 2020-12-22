@@ -41,4 +41,12 @@ h4, h5 {
   color: transparent;
   display: inline;
 }
+.chatbot {
+  max-width: 300px; 
+  position: fixed;
+  right: 0; 
+  bottom: 0;
+  
+  
+}
 
