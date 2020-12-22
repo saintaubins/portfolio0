@@ -9,7 +9,8 @@ const config = {
     botName: botName,
     initialMessages: [
         createChatBotMessage(`Hello, my name is ${botName}.`),
-        createChatBotMessage(`How can I help you?`)
+        createChatBotMessage(`How can I help you?`),
+        createChatBotMessage(`Please excuse me I am a work in progress.`)
     ],
     customComponents: {
         header: () => <div style={{backgroundColor: "rgba(48,99,66,0.8)", padding: "5px",

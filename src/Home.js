@@ -9,9 +9,7 @@ import {
     faGithub,
     faPython,
     faNodeJs,
-    faJava,
-    //feHeroku,
-    //faMocha
+    faJava
 } from '@fortawesome/free-brands-svg-icons';
 import './App.css';
 import Aos from 'aos';

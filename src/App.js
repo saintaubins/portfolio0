@@ -16,18 +16,23 @@ import config from "./chatbot/config";
 import MessageParser from "./chatbot/MessageParser";
 import ActionProvider from "./chatbot/ActionProvider";
 
+import botsmiley from "./assets/botsmiley.jpg";
 
 
 
 export const App = () => {
   const [data, setData] = useState({ hits: [] });
 
-  //const { location } = useContext(__RouterContext);
-  // const transitions = useTransition(location, location => location.pathname, {
-  //     from: { opacity: 0, transform: "translate3d(100%,0,0)" },
-  //     enter: { opacity: 1, transform: "translate3d(0%,0,0)" },
-  //     leave: { opacity: 0, transform: "translate3d(-50%,0,0)" }
-  // });
+  const [showBot, toggleBot] = useState(false);
+
+  const saveMessages = (messages) => {
+    localStorage.setItem("chat_messages", JSON.stringify(messages));
+  }
+
+  const loadMessages = () => {
+    const messages = JSON.parse(localStorage.getItem("chat_messages"));
+    return messages;
+  }
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -78,7 +83,26 @@ export const App = () => {
               <Route exact path="/contact" component={Contact} />
             </Switch>
             <div className="chatbot">
-              <Chatbot config={config} messageParser={MessageParser} actionProvider={ActionProvider} />
+              {showBot && (
+
+                <Chatbot 
+                config={config} 
+                messageParser={MessageParser} 
+                actionProvider={ActionProvider}
+                saveMessages={saveMessages}
+                messageHistory={loadMessages()} 
+                />
+              )}
+              <center>
+                <button style={{'marginBottom':'10px','borderRadius':'10px','marginRight':'10px'}} onClick={() => toggleBot((prev) => !prev)}>
+                  <img src={botsmiley} style={{
+                    'width': '50px', 
+                    'height':'auto',
+                    'marginBottom':'5px'
+                    }}
+                    />
+                </button>
+              </center>
             </div>
       </React.Fragment>
       
